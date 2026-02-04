@@ -81,7 +81,7 @@ class ExchangeScraper:
             "page": 1,
             "rows": 1,
             "payTypes": ["BANESCO", "MERCANTIL"],
-            "countries": [VE],
+            "countries": ["VE"],
             "publisherType": None,
             "asset": "USDT",
             "fiat": "VES",
