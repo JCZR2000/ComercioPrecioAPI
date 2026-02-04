@@ -15,7 +15,7 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")  # Token personal de GitHub (Classic) c
 REPO_OWNER = os.getenv("REPO_OWNER")      # Tu usuario de GitHub
 REPO_NAME = os.getenv("REPO_NAME")        # Nombre del repositorio
 FILE_PATH = "tasas_cambio.json"           # Archivo donde se guardará
-CACHE_DURATION_HOURS = 4
+#CACHE_DURATION_HOURS = 4
 
 # Headers para simular navegador real
 HEADERS = {
@@ -156,43 +156,36 @@ class GitHubStorage:
 def main():
     storage = GitHubStorage()
     
-    # 1. Intentar leer caché
+    # 1. Leemos el archivo SOLO para obtener el SHA y datos de respaldo
+    # YA NO verificamos si es viejo o nuevo. Si el Cron se ejecutó, es hora de actualizar.
     cached_data, sha = storage.get_file()
     
     current_time = time.time()
-    should_update = True
     
-    if cached_data:
-        last_ts = cached_data.get("timestamp", 0)
-        # Verificar si han pasado menos de 4 horas (4 * 3600 segundos)
-        if (current_time - last_ts) < (CACHE_DURATION_HOURS * 3600):
-            print("Usando caché válida.")
-            return cached_data
-        else:
-            print("Caché expirada. Actualizando...")
-    else:
-        print("No hay caché. Creando...")
-
-    # 2. Si no hay caché o expiró, hacemos scraping
+    # 2. Scraping Incondicional
     scraper = ExchangeScraper()
     scraper.get_bcv_rates()
     scraper.get_binance_rate()
     
-    # Actualizar timestamp
     scraper.data["timestamp"] = current_time
     scraper.data["human_date"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Mantener datos antiguos si el scraping falla parcialmente (opcional, buena práctica)
+    # 3. Resiliencia: Si el scraping falló (ej. BCV caído), usamos el dato viejo
     if cached_data:
-        if not scraper.data["dolar"] and cached_data["dolar"]:
+        if not scraper.data["dolar"] and cached_data.get("dolar"):
+            print("BCV falló, usando Dólar en caché.")
             scraper.data["dolar"] = cached_data["dolar"]
-        if not scraper.data["euro"] and cached_data["euro"]:
+            
+        if not scraper.data["euro"] and cached_data.get("euro"):
+            print("BCV falló, usando Euro en caché.")
             scraper.data["euro"] = cached_data["euro"]
+            
+        if not scraper.data["usdt"] and cached_data.get("usdt"):
+            print("Binance falló, usando USDT en caché.")
+            scraper.data["usdt"] = cached_data["usdt"]
 
-    # 3. Guardar en GitHub
-    # Solo guardamos si obtuvimos AL MENOS un dato nuevo o para actualizar el timestamp
+    # 4. Guardar siempre
     storage.update_file(scraper.data, sha)
-    
     return scraper.data
 
 if __name__ == "__main__":
