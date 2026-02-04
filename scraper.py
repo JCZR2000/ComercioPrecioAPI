@@ -109,15 +109,29 @@ class GitHubStorage:
 
     def get_file(self):
         """Obtiene el archivo actual y su SHA (necesario para actualizar)"""
+        sha = None
         try:
             r = requests.get(self.api_url, headers=self.headers)
             if r.status_code == 200:
                 content = r.json()
+                sha = content.get('sha') # 1. Capturamos el SHA antes de nada
+                
+                # Intentamos decodificar el contenido
                 file_content = base64.b64decode(content['content']).decode('utf-8')
-                return json.loads(file_content), content['sha']
+                return json.loads(file_content), sha
+                
+            elif r.status_code == 404:
+                print("El archivo no existe aún. Se creará uno nuevo.")
+                return None, None
+                
+        except json.JSONDecodeError:
+            print("El archivo existe pero tiene JSON inválido. Se sobrescribirá.")
+            return None, sha # <--- ¡Aquí está la magia! Devolvemos el SHA para poder arreglarlo
+            
         except Exception as e:
-            print(f"No se pudo leer caché de GitHub (puede que no exista aún): {e}")
-        return None, None
+            print(f"Error accediendo a GitHub: {e}")
+            
+        return None, sha
 
     def update_file(self, content_dict, sha=None):
         """Sube el nuevo JSON a GitHub"""
