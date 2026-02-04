@@ -80,8 +80,8 @@ class ExchangeScraper:
             "proMerchantAds": False,
             "page": 1,
             "rows": 1,
-            "payTypes": [],
-            "countries": [],
+            "payTypes": ["BANESCO", "MERCANTIL"],
+            "countries": [VE],
             "publisherType": None,
             "asset": "USDT",
             "fiat": "VES",
@@ -96,6 +96,7 @@ class ExchangeScraper:
             if res_json.get("data"):
                 price_str = res_json["data"][0]["adv"]["price"]
                 self.data["usdt"] = float(price_str)
+                print(f"Precio Binance encontrado: {self.data['usdt']}")
         except Exception as e:
             print(f"Error Binance: {e}")
 
