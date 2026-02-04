@@ -1,0 +1,6 @@
+[build]
+  command = "pip install -r requirements.txt"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
