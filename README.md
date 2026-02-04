@@ -9,4 +9,4 @@ El sistema funciona de forma autónoma utilizando **GitHub Actions** para actual
 Para obtener los datos, simplemente realiza una petición GET a la siguiente URL Raw de GitHub. Al ser un archivo estático, la respuesta es inmediata.
 
 ```http
-GET [https://raw.githubusercontent.com/JCZR2000/ComercioPrecioAPI/main/tasas_cambio.json](https://raw.githubusercontent.com/JCZR2000/ComercioPrecioAPI/main/tasas_cambio.json)
+GET [https://raw.githubusercontent.com/JCZR2000/ComercioPrecioAPI/main/tasas_cambio.json]
