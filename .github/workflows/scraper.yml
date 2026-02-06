@@ -3,7 +3,7 @@ name: Actualizar Tasas de Cambio
 on:
   schedule:
     # Ejecutar cada 4 horas (minuto 0 de las horas 0, 4, 8, etc.)
-    - cron: '0 */4 * * *'
+    - cron: '0 * * * *'
   workflow_dispatch: # Permite ejecutarlo manualmente desde la pestaña Actions
 
 jobs:
