@@ -2,7 +2,7 @@
 
 Una API gratuita, serverless y de código abierto que proporciona las tasas de cambio actualizadas para Venezuela (BCV y Paralelo/Binance).
 
-El sistema funciona de forma autónoma utilizando **GitHub Actions** para actualizar un archivo JSON estático cada 4 horas, sirviendo como una "base de datos" de alta velocidad sin costes de servidor.
+El sistema funciona de forma autónoma utilizando **GitHub Actions** para actualizar un archivo JSON estático **cada hora**, sirviendo como una "base de datos" de alta velocidad sin costes de servidor.
 
 ## 🚀 API Endpoint (Uso)
 
