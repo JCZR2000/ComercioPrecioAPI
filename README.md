@@ -14,7 +14,7 @@ GET [https://raw.githubusercontent.com/JCZR2000/ComercioPrecioAPI/main/tasas_cam
 
 ## ⚙️ ¿Cómo funciona?
 
-1. **Cron Job:** Un flujo de trabajo de GitHub Actions _(scraper.yml)_ se despierta automáticamente **cada 4 horas.**
+1. **Cron Job:** Un flujo de trabajo de GitHub Actions _(scraper.yml)_ se despierta automáticamente **cada hora.**
 
 2. **Scraping:**
 
