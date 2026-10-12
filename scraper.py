@@ -269,6 +269,69 @@ def main():
             }
             storage.update_file("base_datos_bcv.json", [new_entry], sha_hist, "Inicializando base_datos_bcv.json")
 
+    # === PARTE 3: HISTÓRICO BINANCE P2P (binance_p2p_daily.json) ===
+    # Solo procedemos si obtuvimos una tasa válida de Binance
+    if scraper.data.get("usdt"):
+      binance_hist, sha_binance = storage.get_file("binance_p2p_daily.json")
+
+      # Estructura idéntica al dataset consolidado
+      new_binance_entry = {
+          "date": current_date,
+          "buy_rate": scraper.data.get("usdt"),
+          "sell_rate": scraper.data.get("usdt_promedio_venta"),
+          "avg_buy_rate": scraper.data.get("usdt_promedio_compra"),
+          "avg_sell_rate": scraper.data.get("usdt_promedio_venta"),
+      }
+
+      if (
+          binance_hist
+          and isinstance(binance_hist, list)
+          and len(binance_hist) > 0
+      ):
+        # 1. Si el último registro es de hoy, actualizamos el cierre
+        if binance_hist[-1].get("date") == current_date:
+          if binance_hist[-1] != new_binance_entry:
+            binance_hist[-1] = new_binance_entry
+            storage.update_file(
+                "binance_p2p_daily.json",
+                binance_hist,
+                sha_binance,
+                f"Auto-update: Cierre Binance P2P ({current_date})",
+            )
+            print(
+                f"✅ Tasa de cierre actualizada para hoy ({current_date}) en"
+                " binance_p2p_daily.json"
+            )
+          else:
+            print("Tasa Binance P2P sin variaciones. Histórico intacto.")
+
+        # 2. Si ya cambió de día calendario, agregamos la nueva fecha
+        else:
+          binance_hist.append(new_binance_entry)
+          storage.update_file(
+              "binance_p2p_daily.json",
+              binance_hist,
+              sha_binance,
+              f"Auto-update: Nuevo día Binance P2P ({current_date})",
+          )
+          print(
+              f"✅ Nueva jornada ({current_date}) añadida a"
+              " binance_p2p_daily.json"
+          )
+
+      # 3. Si el archivo aún no estuviese en el repo, se inicializa
+      elif binance_hist is None:
+        print(
+            "Archivo binance_p2p_daily.json no encontrado en GitHub."
+            " Inicializando..."
+        )
+        storage.update_file(
+            "binance_p2p_daily.json",
+            [new_binance_entry],
+            sha_binance,
+            f"Inicializando binance_p2p_daily.json ({current_date})",
+        )
+
     return scraper.data
 
 if __name__ == "__main__":
