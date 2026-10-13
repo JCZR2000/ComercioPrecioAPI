@@ -24,15 +24,25 @@ HEADERS = {
 class ExchangeScraper:
     def __init__(self):
         self.data = {
-            "dolar": None,
-            "euro": None,
-            "usdt": None,
-            "usdt_promedio_compra": None,
-            "usdt_promedio_venta": None,
-            "fecha_bcv": None,
-            "timestamp": 0,
-            "human_date": ""
-        }
+        "dolar": None,
+        "euro": None,
+        # Binance
+        "usdt": None,
+        "usdt_promedio_compra": None,
+        "usdt_promedio_venta": None,
+        # Bybit
+        "bybit_usdt": None,
+        "bybit_promedio_compra": None,
+        "bybit_promedio_venta": None,
+        # OKX
+        "okx_usdt": None,
+        "okx_promedio_compra": None,
+        "okx_promedio_venta": None,
+        # Data Historico
+        "fecha_bcv": None,
+        "timestamp": 0,
+        "human_date": "",
+    }
 
     def _clean_number(self, text_value):
         if not text_value:
@@ -107,7 +117,7 @@ class ExchangeScraper:
             "proMerchantAds": False,
             "page": 1,
             "rows": rows, 
-            "payTypes": ["BANESCO", "MERCANTIL"],
+            "payTypes": ["BANESCO", "MERCANTIL", "BANCO DE VENEZUELA", "TRANSFERENCIA BANCARIA"],
             "countries": ["VE"],
             "publisherType": None,
             "asset": "USDT",
@@ -161,6 +171,134 @@ class ExchangeScraper:
             self.data["usdt_promedio_venta"] = round(avg_sell, 2)
             print(f"✅ Binance Venta: Promedio {self.data['usdt_promedio_venta']}")
 
+    def get_bybit_rates(self):
+      print("Consultando Bybit P2P...")
+      url = "https://api2.bybit.com/fiat/otc/item/online"
+      headers = {
+          "User-Agent": (
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+          ),
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+      }
+
+      # 1. COMPRA (side="1")
+      try:
+        payload_buy = {
+            "userId": "",
+            "tokenId": "USDT",
+            "currencyId": "VES",
+            "payment": [],
+            "side": "1",
+            "size": "10",
+            "page": "1",
+            "amount": "",
+            "authMaker": False,
+            "canTrade": False,
+        }
+        r = requests.post(
+            url, json=payload_buy, headers=headers, timeout=12
+        ).json()
+        items = (r.get("result") or {}).get("items", [])
+        if items:
+          prices = [float(x["price"]) for x in items if "price" in x]
+          self.data["bybit_usdt"] = prices[0]
+          self.data["bybit_promedio_compra"] = round(
+              sum(prices) / len(prices), 2
+          )
+          print(
+              f"✅ Bybit Compra: Mejor {self.data['bybit_usdt']} | Promedio"
+              f" {self.data['bybit_promedio_compra']}"
+          )
+      except Exception as e:
+        print(f"❌ Error Bybit Compra: {e}")
+
+      time.sleep(2)
+
+      # 2. VENTA (side="0")
+      try:
+        payload_sell = {
+            "userId": "",
+            "tokenId": "USDT",
+            "currencyId": "VES",
+            "payment": [],
+            "side": "0",
+            "size": "10",
+            "page": "1",
+            "amount": "",
+            "authMaker": False,
+            "canTrade": False,
+        }
+        r = requests.post(
+            url, json=payload_sell, headers=headers, timeout=12
+        ).json()
+        items = r.get("result", {}).get("items", [])
+        if items:
+          prices = [float(x["price"]) for x in items if "price" in x]
+          self.data["bybit_promedio_venta"] = round(
+              sum(prices) / len(prices), 2
+          )
+          print(f"✅ Bybit Venta: Promedio {self.data['bybit_promedio_venta']}")
+      except Exception as e:
+        print(f"❌ Error Bybit Venta: {e}")
+
+    def get_okx_rates(self):
+      print("Consultando OKX P2P...")
+      url = "https://www.okx.com/v3/c2c/tradingOrders/books"
+      headers = {
+          "User-Agent": (
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+          ),
+          "Accept": "application/json",
+          "Referer": "https://www.okx.com/es-la/p2p-markets/ves/buy-usdt",
+      }
+
+      # 1. COMPRA (side="buy")
+      try:
+        params_buy = {
+            "quoteCurrency": "ves",
+            "baseCurrency": "usdt",
+            "side": "buy",
+            "paymentMethod": ["BANCO DE VENEZUELA", "MERCANTIL", "BANESCO"],
+            "userType": "all",
+        }
+        r = requests.get(
+            url, headers=headers, params=params_buy, timeout=12
+        ).json()
+        orders = (r.get("data") or {}).get("buy", [])
+        if orders:
+          prices = [float(x["price"]) for x in orders[:10]]
+          self.data["okx_usdt"] = prices[0]
+          self.data["okx_promedio_compra"] = round(sum(prices) / len(prices), 2)
+          print(
+              f"✅ OKX Compra: Mejor {self.data['okx_usdt']} | Promedio"
+              f" {self.data['okx_promedio_compra']}"
+          )
+      except Exception as e:
+        print(f"❌ Error OKX Compra: {e}")
+
+      time.sleep(2)
+
+      # 2. VENTA (side="sell")
+      try:
+        params_sell = {
+            "quoteCurrency": "ves",
+            "baseCurrency": "usdt",
+            "side": "sell",
+            "paymentMethod": ["BANCO DE VENEZUELA", "MERCANTIL", "BANESCO"],
+            "userType": "all",
+        }
+        r = requests.get(
+            url, headers=headers, params=params_sell, timeout=12
+        ).json()
+        orders = r.get("data", {}).get("sell", [])
+        if orders:
+          prices = [float(x["price"]) for x in orders[:10]]
+          self.data["okx_promedio_venta"] = round(sum(prices) / len(prices), 2)
+          print(f"✅ OKX Venta: Promedio {self.data['okx_promedio_venta']}")
+      except Exception as e:
+        print(f"❌ Error OKX Venta: {e}")
+
 class GitHubStorage:
     def __init__(self):
         self.base_url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/contents/"
@@ -206,30 +344,94 @@ class GitHubStorage:
         else:
             print(f"❌ Error actualizando {file_name}: {r.text}")
 
+def update_daily_p2p_history(
+    storage, file_name, current_date, buy, sell, avg_buy, avg_sell, label
+):
+  """Mantiene y actualiza el cierre diario en el archivo histórico correspondiente."""
+  if not buy:
+    return
+
+  hist_data, sha = storage.get_file(file_name)
+  new_entry = {
+      "date": current_date,
+      "buy_rate": buy,
+      "sell_rate": sell,
+      "avg_buy_rate": avg_buy,
+      "avg_sell_rate": avg_sell,
+  }
+
+  if isinstance(hist_data, list) and len(hist_data) > 0:
+    if hist_data[-1].get("date") == current_date:
+      if hist_data[-1] != new_entry:
+        hist_data[-1] = new_entry
+        storage.update_file(
+            file_name,
+            hist_data,
+            sha,
+            f"Auto-update: Cierre {label} ({current_date})",
+        )
+        print(f"✅ Cierre diario actualizado en {file_name}")
+      else:
+        print(f"{label} sin variaciones. Histórico intacto.")
+    else:
+      hist_data.append(new_entry)
+      storage.update_file(
+          file_name,
+          hist_data,
+          sha,
+          f"Auto-update: Nuevo día {label} ({current_date})",
+      )
+      print(f"✅ Nueva fecha añadida a {file_name}")
+  else:
+    # El archivo no existe o contiene una lista vacía []
+    print(f"Inicializando {file_name}...")
+    storage.update_file(
+        file_name, [new_entry], sha, f"Inicializando {file_name}"
+    )
+
 def main():
     storage = GitHubStorage()
     current_time = time.time()
     current_date = datetime.now().strftime("%Y-%m-%d")
     
     # === PARTE 1: TASAS ACTUALES (tasas_cambio.json) ===
-    cached_data, sha_actual = storage.get_file("tasas_cambio.json")
-    
     scraper = ExchangeScraper()
     scraper.get_bcv_rates()
     scraper.get_binance_rates()
-    
+    scraper.get_bybit_rates()
+    scraper.get_okx_rates()
+
     scraper.data["timestamp"] = current_time
     scraper.data["human_date"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     # Resiliencia: Si algo falló, rellenar con caché
+    cached_data, sha_actual = storage.get_file("tasas_cambio.json")
     if cached_data:
-        keys_to_check = ["dolar", "euro", "usdt", "usdt_promedio_compra", "usdt_promedio_venta"]
+        keys_to_check = [
+            "dolar",
+            "euro",
+            "usdt",
+            "usdt_promedio_compra",
+            "usdt_promedio_venta",
+            "bybit_usdt",
+            "bybit_promedio_compra",
+            "bybit_promedio_venta",
+            "okx_usdt",
+            "okx_promedio_compra",
+            "okx_promedio_venta",
+        ]
         for key in keys_to_check:
             if not scraper.data.get(key) and cached_data.get(key):
                 print(f"⚠️ Recuperando {key} de caché...")
                 scraper.data[key] = cached_data[key]
 
-    storage.update_file("tasas_cambio.json", scraper.data, sha_actual, "Auto-update: Tasas Actuales")
+    # Actualizar tasas_cambio.json con todas las plataformas
+    storage.update_file(
+      "tasas_cambio.json",
+      scraper.data,
+      sha_actual,
+      "Auto-update: Tasas Actuales",
+    )
 
     # === PARTE 2: HISTÓRICO BCV (base_datos_bcv.json) ===
     # Solo procedemos si el scraping del BCV fue exitoso
@@ -269,68 +471,43 @@ def main():
             }
             storage.update_file("base_datos_bcv.json", [new_entry], sha_hist, "Inicializando base_datos_bcv.json")
 
-    # === PARTE 3: HISTÓRICO BINANCE P2P (binance_p2p_daily.json) ===
-    # Solo procedemos si obtuvimos una tasa válida de Binance
-    if scraper.data.get("usdt"):
-      binance_hist, sha_binance = storage.get_file("binance_p2p_daily.json")
+    # === PARTE 3: HISTÓRICOS P2P INDEPENDIENTES ===
 
-      # Estructura idéntica al dataset consolidado
-      new_binance_entry = {
-          "date": current_date,
-          "buy_rate": scraper.data.get("usdt"),
-          "sell_rate": scraper.data.get("usdt_promedio_venta"),
-          "avg_buy_rate": scraper.data.get("usdt_promedio_compra"),
-          "avg_sell_rate": scraper.data.get("usdt_promedio_venta"),
-      }
+    # Binance P2P
+    update_daily_p2p_history(
+        storage,
+        "binance_p2p_daily.json",
+        current_date,
+        scraper.data.get("usdt"),
+        scraper.data.get("usdt_promedio_venta"),
+        scraper.data.get("usdt_promedio_compra"),
+        scraper.data.get("usdt_promedio_venta"),
+        "Binance P2P",
+    )
 
-      if (
-          binance_hist
-          and isinstance(binance_hist, list)
-          and len(binance_hist) > 0
-      ):
-        # 1. Si el último registro es de hoy, actualizamos el cierre
-        if binance_hist[-1].get("date") == current_date:
-          if binance_hist[-1] != new_binance_entry:
-            binance_hist[-1] = new_binance_entry
-            storage.update_file(
-                "binance_p2p_daily.json",
-                binance_hist,
-                sha_binance,
-                f"Auto-update: Cierre Binance P2P ({current_date})",
-            )
-            print(
-                f"✅ Tasa de cierre actualizada para hoy ({current_date}) en"
-                " binance_p2p_daily.json"
-            )
-          else:
-            print("Tasa Binance P2P sin variaciones. Histórico intacto.")
+    # Bybit P2P
+    update_daily_p2p_history(
+        storage,
+        "bybit_p2p_daily.json",
+        current_date,
+        scraper.data.get("bybit_usdt"),
+        scraper.data.get("bybit_promedio_venta"),
+        scraper.data.get("bybit_promedio_compra"),
+        scraper.data.get("bybit_promedio_venta"),
+        "Bybit P2P",
+    )
 
-        # 2. Si ya cambió de día calendario, agregamos la nueva fecha
-        else:
-          binance_hist.append(new_binance_entry)
-          storage.update_file(
-              "binance_p2p_daily.json",
-              binance_hist,
-              sha_binance,
-              f"Auto-update: Nuevo día Binance P2P ({current_date})",
-          )
-          print(
-              f"✅ Nueva jornada ({current_date}) añadida a"
-              " binance_p2p_daily.json"
-          )
-
-      # 3. Si el archivo aún no estuviese en el repo, se inicializa
-      elif binance_hist is None:
-        print(
-            "Archivo binance_p2p_daily.json no encontrado en GitHub."
-            " Inicializando..."
-        )
-        storage.update_file(
-            "binance_p2p_daily.json",
-            [new_binance_entry],
-            sha_binance,
-            f"Inicializando binance_p2p_daily.json ({current_date})",
-        )
+    # OKX P2P
+    update_daily_p2p_history(
+        storage,
+        "okx_p2p_daily.json",
+        current_date,
+        scraper.data.get("okx_usdt"),
+        scraper.data.get("okx_promedio_venta"),
+        scraper.data.get("okx_promedio_compra"),
+        scraper.data.get("okx_promedio_venta"),
+        "OKX P2P",
+    )
 
     return scraper.data
 

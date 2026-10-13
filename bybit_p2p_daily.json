@@ -1,0 +1,1514 @@
+[
+  {
+    "date": "2026-01-17",
+    "buy_rate": 451.0,
+    "sell_rate": 448.5,
+    "avg_buy_rate": 453.98,
+    "avg_sell_rate": 449.27
+  },
+  {
+    "date": "2026-01-18",
+    "buy_rate": 452.85,
+    "sell_rate": 446.05,
+    "avg_buy_rate": 454.42,
+    "avg_sell_rate": 446.9
+  },
+  {
+    "date": "2026-01-19",
+    "buy_rate": 421.9,
+    "sell_rate": 418.3,
+    "avg_buy_rate": 442.47,
+    "avg_sell_rate": 432.82
+  },
+  {
+    "date": "2026-01-20",
+    "buy_rate": 454.95,
+    "sell_rate": 450.0,
+    "avg_buy_rate": 434.6,
+    "avg_sell_rate": 426.39
+  },
+  {
+    "date": "2026-01-21",
+    "buy_rate": 468.99,
+    "sell_rate": 464.3,
+    "avg_buy_rate": 463.28,
+    "avg_sell_rate": 453.98
+  },
+  {
+    "date": "2026-01-22",
+    "buy_rate": 465.2,
+    "sell_rate": 461.1,
+    "avg_buy_rate": 465.83,
+    "avg_sell_rate": 458.14
+  },
+  {
+    "date": "2026-01-23",
+    "buy_rate": 469.95,
+    "sell_rate": 467.0,
+    "avg_buy_rate": 466.04,
+    "avg_sell_rate": 458.1
+  },
+  {
+    "date": "2026-01-24",
+    "buy_rate": 478.8,
+    "sell_rate": 474.25,
+    "avg_buy_rate": 474.11,
+    "avg_sell_rate": 468.95
+  },
+  {
+    "date": "2026-01-25",
+    "buy_rate": 466.42,
+    "sell_rate": 462.38,
+    "avg_buy_rate": 476.44,
+    "avg_sell_rate": 470.4
+  },
+  {
+    "date": "2026-01-26",
+    "buy_rate": 512.7,
+    "sell_rate": 507.11,
+    "avg_buy_rate": 484.94,
+    "avg_sell_rate": 477.12
+  },
+  {
+    "date": "2026-01-27",
+    "buy_rate": 547.0,
+    "sell_rate": 543.52,
+    "avg_buy_rate": 534.47,
+    "avg_sell_rate": 525.18
+  },
+  {
+    "date": "2026-01-28",
+    "buy_rate": 529.62,
+    "sell_rate": 524.0,
+    "avg_buy_rate": 540.14,
+    "avg_sell_rate": 529.29
+  },
+  {
+    "date": "2026-01-29",
+    "buy_rate": 518.0,
+    "sell_rate": 512.5,
+    "avg_buy_rate": 529.85,
+    "avg_sell_rate": 520.17
+  },
+  {
+    "date": "2026-01-30",
+    "buy_rate": 513.0,
+    "sell_rate": 508.25,
+    "avg_buy_rate": 515.13,
+    "avg_sell_rate": 506.91
+  },
+  {
+    "date": "2026-01-31",
+    "buy_rate": 513.97,
+    "sell_rate": 508.1,
+    "avg_buy_rate": 515.7,
+    "avg_sell_rate": 507.01
+  },
+  {
+    "date": "2026-02-01",
+    "buy_rate": 512.0,
+    "sell_rate": 507.3,
+    "avg_buy_rate": 513.52,
+    "avg_sell_rate": 506.61
+  },
+  {
+    "date": "2026-02-02",
+    "buy_rate": 523.65,
+    "sell_rate": 521.65,
+    "avg_buy_rate": 519.07,
+    "avg_sell_rate": 510.13
+  },
+  {
+    "date": "2026-02-03",
+    "buy_rate": 531.3,
+    "sell_rate": 526.65,
+    "avg_buy_rate": 528.36,
+    "avg_sell_rate": 520.4
+  },
+  {
+    "date": "2026-02-04",
+    "buy_rate": 530.5,
+    "sell_rate": 527.8,
+    "avg_buy_rate": 529.55,
+    "avg_sell_rate": 523.31
+  },
+  {
+    "date": "2026-02-05",
+    "buy_rate": 541.6,
+    "sell_rate": 538.0,
+    "avg_buy_rate": 535.6,
+    "avg_sell_rate": 528.14
+  },
+  {
+    "date": "2026-02-06",
+    "buy_rate": 551.5,
+    "sell_rate": 542.65,
+    "avg_buy_rate": 549.0,
+    "avg_sell_rate": 542.12
+  },
+  {
+    "date": "2026-02-07",
+    "buy_rate": 546.15,
+    "sell_rate": 542.1,
+    "avg_buy_rate": 548.17,
+    "avg_sell_rate": 541.44
+  },
+  {
+    "date": "2026-02-08",
+    "buy_rate": 537.15,
+    "sell_rate": 531.92,
+    "avg_buy_rate": 545.51,
+    "avg_sell_rate": 538.53
+  },
+  {
+    "date": "2026-02-09",
+    "buy_rate": 546.0,
+    "sell_rate": 542.25,
+    "avg_buy_rate": 545.9,
+    "avg_sell_rate": 535.66
+  },
+  {
+    "date": "2026-02-10",
+    "buy_rate": 549.7,
+    "sell_rate": 547.78,
+    "avg_buy_rate": 551.05,
+    "avg_sell_rate": 543.46
+  },
+  {
+    "date": "2026-02-11",
+    "buy_rate": 551.15,
+    "sell_rate": 546.19,
+    "avg_buy_rate": 550.82,
+    "avg_sell_rate": 544.89
+  },
+  {
+    "date": "2026-02-12",
+    "buy_rate": 544.92,
+    "sell_rate": 540.11,
+    "avg_buy_rate": 551.79,
+    "avg_sell_rate": 542.81
+  },
+  {
+    "date": "2026-02-13",
+    "buy_rate": 533.55,
+    "sell_rate": 529.61,
+    "avg_buy_rate": 542.35,
+    "avg_sell_rate": 535.75
+  },
+  {
+    "date": "2026-02-14",
+    "buy_rate": 533.8,
+    "sell_rate": 528.5,
+    "avg_buy_rate": 535.97,
+    "avg_sell_rate": 527.44
+  },
+  {
+    "date": "2026-02-15",
+    "buy_rate": 539.98,
+    "sell_rate": 535.1,
+    "avg_buy_rate": 536.84,
+    "avg_sell_rate": 528.32
+  },
+  {
+    "date": "2026-02-16",
+    "buy_rate": 536.0,
+    "sell_rate": 531.05,
+    "avg_buy_rate": 540.05,
+    "avg_sell_rate": 533.43
+  },
+  {
+    "date": "2026-02-17",
+    "buy_rate": 533.65,
+    "sell_rate": 529.18,
+    "avg_buy_rate": 535.84,
+    "avg_sell_rate": 528.38
+  },
+  {
+    "date": "2026-02-18",
+    "buy_rate": 569.95,
+    "sell_rate": 563.08,
+    "avg_buy_rate": 543.76,
+    "avg_sell_rate": 537.18
+  },
+  {
+    "date": "2026-02-19",
+    "buy_rate": 584.5,
+    "sell_rate": 581.5,
+    "avg_buy_rate": 578.0,
+    "avg_sell_rate": 568.87
+  },
+  {
+    "date": "2026-02-20",
+    "buy_rate": 575.74,
+    "sell_rate": 571.75,
+    "avg_buy_rate": 580.94,
+    "avg_sell_rate": 574.78
+  },
+  {
+    "date": "2026-02-21",
+    "buy_rate": 572.8,
+    "sell_rate": 568.85,
+    "avg_buy_rate": 574.12,
+    "avg_sell_rate": 568.88
+  },
+  {
+    "date": "2026-02-22",
+    "buy_rate": 564.0,
+    "sell_rate": 559.95,
+    "avg_buy_rate": 569.23,
+    "avg_sell_rate": 562.39
+  },
+  {
+    "date": "2026-02-23",
+    "buy_rate": 595.5,
+    "sell_rate": 587.58,
+    "avg_buy_rate": 576.73,
+    "avg_sell_rate": 568.22
+  },
+  {
+    "date": "2026-02-24",
+    "buy_rate": 619.75,
+    "sell_rate": 615.17,
+    "avg_buy_rate": 607.1,
+    "avg_sell_rate": 599.37
+  },
+  {
+    "date": "2026-02-25",
+    "buy_rate": 613.0,
+    "sell_rate": 608.51,
+    "avg_buy_rate": 619.53,
+    "avg_sell_rate": 610.62
+  },
+  {
+    "date": "2026-02-26",
+    "buy_rate": 614.0,
+    "sell_rate": 609.96,
+    "avg_buy_rate": 614.56,
+    "avg_sell_rate": 609.03
+  },
+  {
+    "date": "2026-02-27",
+    "buy_rate": 607.81,
+    "sell_rate": 603.4,
+    "avg_buy_rate": 612.91,
+    "avg_sell_rate": 606.48
+  },
+  {
+    "date": "2026-02-28",
+    "buy_rate": 606.0,
+    "sell_rate": 601.0,
+    "avg_buy_rate": 608.89,
+    "avg_sell_rate": 602.07
+  },
+  {
+    "date": "2026-03-01",
+    "buy_rate": 608.0,
+    "sell_rate": 602.87,
+    "avg_buy_rate": 606.62,
+    "avg_sell_rate": 600.7
+  },
+  {
+    "date": "2026-03-02",
+    "buy_rate": 616.4,
+    "sell_rate": 614.0,
+    "avg_buy_rate": 615.26,
+    "avg_sell_rate": 605.92
+  },
+  {
+    "date": "2026-03-03",
+    "buy_rate": 628.25,
+    "sell_rate": 625.0,
+    "avg_buy_rate": 619.68,
+    "avg_sell_rate": 613.02
+  },
+  {
+    "date": "2026-03-04",
+    "buy_rate": 631.45,
+    "sell_rate": 626.64,
+    "avg_buy_rate": 636.2,
+    "avg_sell_rate": 629.53
+  },
+  {
+    "date": "2026-03-05",
+    "buy_rate": 629.1,
+    "sell_rate": 622.0,
+    "avg_buy_rate": 639.66,
+    "avg_sell_rate": 629.65
+  },
+  {
+    "date": "2026-03-06",
+    "buy_rate": 617.0,
+    "sell_rate": 612.46,
+    "avg_buy_rate": 625.61,
+    "avg_sell_rate": 615.46
+  },
+  {
+    "date": "2026-03-07",
+    "buy_rate": 604.5,
+    "sell_rate": 598.05,
+    "avg_buy_rate": 614.59,
+    "avg_sell_rate": 606.78
+  },
+  {
+    "date": "2026-03-08",
+    "buy_rate": 610.05,
+    "sell_rate": 606.16,
+    "avg_buy_rate": 607.78,
+    "avg_sell_rate": 599.11
+  },
+  {
+    "date": "2026-03-09",
+    "buy_rate": 618.0,
+    "sell_rate": 612.25,
+    "avg_buy_rate": 618.3,
+    "avg_sell_rate": 608.73
+  },
+  {
+    "date": "2026-03-10",
+    "buy_rate": 622.0,
+    "sell_rate": 617.65,
+    "avg_buy_rate": 621.4,
+    "avg_sell_rate": 613.93
+  },
+  {
+    "date": "2026-03-11",
+    "buy_rate": 627.85,
+    "sell_rate": 625.31,
+    "avg_buy_rate": 628.35,
+    "avg_sell_rate": 622.12
+  },
+  {
+    "date": "2026-03-12",
+    "buy_rate": 626.35,
+    "sell_rate": 623.1,
+    "avg_buy_rate": 628.77,
+    "avg_sell_rate": 623.02
+  },
+  {
+    "date": "2026-03-13",
+    "buy_rate": 625.0,
+    "sell_rate": 622.0,
+    "avg_buy_rate": 625.36,
+    "avg_sell_rate": 620.58
+  },
+  {
+    "date": "2026-03-14",
+    "buy_rate": 624.95,
+    "sell_rate": 621.63,
+    "avg_buy_rate": 626.12,
+    "avg_sell_rate": 621.78
+  },
+  {
+    "date": "2026-03-15",
+    "buy_rate": 631.89,
+    "sell_rate": 628.88,
+    "avg_buy_rate": 627.92,
+    "avg_sell_rate": 623.29
+  },
+  {
+    "date": "2026-03-16",
+    "buy_rate": 652.0,
+    "sell_rate": 647.85,
+    "avg_buy_rate": 640.8,
+    "avg_sell_rate": 634.38
+  },
+  {
+    "date": "2026-03-17",
+    "buy_rate": 664.98,
+    "sell_rate": 663.0,
+    "avg_buy_rate": 658.84,
+    "avg_sell_rate": 651.19
+  },
+  {
+    "date": "2026-03-18",
+    "buy_rate": 665.35,
+    "sell_rate": 663.45,
+    "avg_buy_rate": 667.18,
+    "avg_sell_rate": 660.43
+  },
+  {
+    "date": "2026-03-19",
+    "buy_rate": 662.45,
+    "sell_rate": 660.12,
+    "avg_buy_rate": 665.21,
+    "avg_sell_rate": 660.26
+  },
+  {
+    "date": "2026-03-20",
+    "buy_rate": 656.0,
+    "sell_rate": 653.31,
+    "avg_buy_rate": 658.78,
+    "avg_sell_rate": 653.94
+  },
+  {
+    "date": "2026-03-21",
+    "buy_rate": 656.7,
+    "sell_rate": 653.51,
+    "avg_buy_rate": 657.19,
+    "avg_sell_rate": 651.66
+  },
+  {
+    "date": "2026-03-22",
+    "buy_rate": 658.0,
+    "sell_rate": 653.02,
+    "avg_buy_rate": 655.91,
+    "avg_sell_rate": 649.95
+  },
+  {
+    "date": "2026-03-23",
+    "buy_rate": 663.45,
+    "sell_rate": 658.55,
+    "avg_buy_rate": 658.63,
+    "avg_sell_rate": 652.78
+  },
+  {
+    "date": "2026-03-24",
+    "buy_rate": 667.15,
+    "sell_rate": 664.4,
+    "avg_buy_rate": 661.03,
+    "avg_sell_rate": 655.25
+  },
+  {
+    "date": "2026-03-25",
+    "buy_rate": 679.0,
+    "sell_rate": 672.81,
+    "avg_buy_rate": 673.36,
+    "avg_sell_rate": 668.47
+  },
+  {
+    "date": "2026-03-26",
+    "buy_rate": 666.0,
+    "sell_rate": 663.65,
+    "avg_buy_rate": 674.58,
+    "avg_sell_rate": 667.26
+  },
+  {
+    "date": "2026-03-27",
+    "buy_rate": 665.0,
+    "sell_rate": 661.5,
+    "avg_buy_rate": 665.19,
+    "avg_sell_rate": 660.17
+  },
+  {
+    "date": "2026-03-28",
+    "buy_rate": 666.95,
+    "sell_rate": 666.09,
+    "avg_buy_rate": 667.88,
+    "avg_sell_rate": 662.86
+  },
+  {
+    "date": "2026-03-29",
+    "buy_rate": 667.77,
+    "sell_rate": 664.57,
+    "avg_buy_rate": 670.05,
+    "avg_sell_rate": 664.68
+  },
+  {
+    "date": "2026-03-30",
+    "buy_rate": 659.35,
+    "sell_rate": 656.1,
+    "avg_buy_rate": 663.46,
+    "avg_sell_rate": 658.17
+  },
+  {
+    "date": "2026-03-31",
+    "buy_rate": 659.0,
+    "sell_rate": 654.05,
+    "avg_buy_rate": 659.17,
+    "avg_sell_rate": 654.36
+  },
+  {
+    "date": "2026-04-01",
+    "buy_rate": 654.5,
+    "sell_rate": 651.6,
+    "avg_buy_rate": 654.96,
+    "avg_sell_rate": 649.67
+  },
+  {
+    "date": "2026-04-02",
+    "buy_rate": 653.45,
+    "sell_rate": 650.21,
+    "avg_buy_rate": 654.71,
+    "avg_sell_rate": 649.1
+  },
+  {
+    "date": "2026-04-03",
+    "buy_rate": 643.83,
+    "sell_rate": 640.0,
+    "avg_buy_rate": 649.18,
+    "avg_sell_rate": 644.1
+  },
+  {
+    "date": "2026-04-04",
+    "buy_rate": 630.95,
+    "sell_rate": 627.8,
+    "avg_buy_rate": 638.52,
+    "avg_sell_rate": 632.63
+  },
+  {
+    "date": "2026-04-05",
+    "buy_rate": 630.95,
+    "sell_rate": 627.0,
+    "avg_buy_rate": 631.97,
+    "avg_sell_rate": 624.59
+  },
+  {
+    "date": "2026-04-06",
+    "buy_rate": 638.4,
+    "sell_rate": 636.25,
+    "avg_buy_rate": 632.24,
+    "avg_sell_rate": 628.22
+  },
+  {
+    "date": "2026-04-07",
+    "buy_rate": 638.0,
+    "sell_rate": 637.1,
+    "avg_buy_rate": 634.88,
+    "avg_sell_rate": 630.51
+  },
+  {
+    "date": "2026-04-08",
+    "buy_rate": 639.9,
+    "sell_rate": 633.0,
+    "avg_buy_rate": 638.24,
+    "avg_sell_rate": 633.53
+  },
+  {
+    "date": "2026-04-09",
+    "buy_rate": 637.55,
+    "sell_rate": 634.7,
+    "avg_buy_rate": 634.87,
+    "avg_sell_rate": 629.65
+  },
+  {
+    "date": "2026-04-10",
+    "buy_rate": 639.0,
+    "sell_rate": 634.55,
+    "avg_buy_rate": 638.18,
+    "avg_sell_rate": 632.56
+  },
+  {
+    "date": "2026-04-11",
+    "buy_rate": 632.95,
+    "sell_rate": 628.02,
+    "avg_buy_rate": 637.97,
+    "avg_sell_rate": 630.96
+  },
+  {
+    "date": "2026-04-12",
+    "buy_rate": 631.93,
+    "sell_rate": 625.76,
+    "avg_buy_rate": 632.31,
+    "avg_sell_rate": 625.78
+  },
+  {
+    "date": "2026-04-13",
+    "buy_rate": 638.0,
+    "sell_rate": 633.5,
+    "avg_buy_rate": 632.58,
+    "avg_sell_rate": 625.7
+  },
+  {
+    "date": "2026-04-14",
+    "buy_rate": 632.8,
+    "sell_rate": 625.56,
+    "avg_buy_rate": 642.12,
+    "avg_sell_rate": 635.23
+  },
+  {
+    "date": "2026-04-15",
+    "buy_rate": 626.4,
+    "sell_rate": 622.0,
+    "avg_buy_rate": 629.77,
+    "avg_sell_rate": 621.88
+  },
+  {
+    "date": "2026-04-16",
+    "buy_rate": 624.15,
+    "sell_rate": 620.03,
+    "avg_buy_rate": 625.24,
+    "avg_sell_rate": 617.39
+  },
+  {
+    "date": "2026-04-17",
+    "buy_rate": 619.99,
+    "sell_rate": 615.5,
+    "avg_buy_rate": 623.12,
+    "avg_sell_rate": 617.87
+  },
+  {
+    "date": "2026-04-18",
+    "buy_rate": 622.25,
+    "sell_rate": 618.55,
+    "avg_buy_rate": 621.06,
+    "avg_sell_rate": 617.05
+  },
+  {
+    "date": "2026-04-19",
+    "buy_rate": 621.55,
+    "sell_rate": 618.25,
+    "avg_buy_rate": 622.52,
+    "avg_sell_rate": 618.33
+  },
+  {
+    "date": "2026-04-20",
+    "buy_rate": 634.0,
+    "sell_rate": 631.1,
+    "avg_buy_rate": 624.78,
+    "avg_sell_rate": 620.71
+  },
+  {
+    "date": "2026-04-21",
+    "buy_rate": 627.99,
+    "sell_rate": 624.55,
+    "avg_buy_rate": 631.52,
+    "avg_sell_rate": 627.36
+  },
+  {
+    "date": "2026-04-22",
+    "buy_rate": 630.0,
+    "sell_rate": 626.82,
+    "avg_buy_rate": 628.28,
+    "avg_sell_rate": 623.49
+  },
+  {
+    "date": "2026-04-23",
+    "buy_rate": 632.75,
+    "sell_rate": 628.1,
+    "avg_buy_rate": 629.87,
+    "avg_sell_rate": 625.5
+  },
+  {
+    "date": "2026-04-24",
+    "buy_rate": 629.0,
+    "sell_rate": 627.0,
+    "avg_buy_rate": 630.45,
+    "avg_sell_rate": 626.35
+  },
+  {
+    "date": "2026-04-25",
+    "buy_rate": 632.92,
+    "sell_rate": 628.5,
+    "avg_buy_rate": 630.11,
+    "avg_sell_rate": 626.09
+  },
+  {
+    "date": "2026-04-26",
+    "buy_rate": 630.99,
+    "sell_rate": 628.5,
+    "avg_buy_rate": 632.68,
+    "avg_sell_rate": 627.89
+  },
+  {
+    "date": "2026-04-27",
+    "buy_rate": 645.0,
+    "sell_rate": 642.25,
+    "avg_buy_rate": 635.03,
+    "avg_sell_rate": 631.35
+  },
+  {
+    "date": "2026-04-28",
+    "buy_rate": 646.35,
+    "sell_rate": 643.51,
+    "avg_buy_rate": 647.5,
+    "avg_sell_rate": 642.39
+  },
+  {
+    "date": "2026-04-29",
+    "buy_rate": 636.9,
+    "sell_rate": 630.55,
+    "avg_buy_rate": 646.08,
+    "avg_sell_rate": 640.96
+  },
+  {
+    "date": "2026-04-30",
+    "buy_rate": 631.42,
+    "sell_rate": 628.15,
+    "avg_buy_rate": 634.82,
+    "avg_sell_rate": 627.5
+  },
+  {
+    "date": "2026-05-01",
+    "buy_rate": 634.1,
+    "sell_rate": 630.5,
+    "avg_buy_rate": 634.0,
+    "avg_sell_rate": 628.48
+  },
+  {
+    "date": "2026-05-02",
+    "buy_rate": 633.0,
+    "sell_rate": 627.45,
+    "avg_buy_rate": 633.88,
+    "avg_sell_rate": 628.93
+  },
+  {
+    "date": "2026-05-03",
+    "buy_rate": 632.0,
+    "sell_rate": 629.3,
+    "avg_buy_rate": 633.4,
+    "avg_sell_rate": 627.91
+  },
+  {
+    "date": "2026-05-04",
+    "buy_rate": 643.8,
+    "sell_rate": 640.0,
+    "avg_buy_rate": 639.42,
+    "avg_sell_rate": 634.01
+  },
+  {
+    "date": "2026-05-05",
+    "buy_rate": 648.45,
+    "sell_rate": 646.3,
+    "avg_buy_rate": 648.6,
+    "avg_sell_rate": 643.81
+  },
+  {
+    "date": "2026-05-06",
+    "buy_rate": 659.0,
+    "sell_rate": 654.11,
+    "avg_buy_rate": 652.53,
+    "avg_sell_rate": 648.39
+  },
+  {
+    "date": "2026-05-07",
+    "buy_rate": 655.73,
+    "sell_rate": 650.75,
+    "avg_buy_rate": 658.64,
+    "avg_sell_rate": 654.17
+  },
+  {
+    "date": "2026-05-08",
+    "buy_rate": 650.92,
+    "sell_rate": 645.5,
+    "avg_buy_rate": 653.25,
+    "avg_sell_rate": 647.93
+  },
+  {
+    "date": "2026-05-09",
+    "buy_rate": 651.0,
+    "sell_rate": 649.0,
+    "avg_buy_rate": 651.99,
+    "avg_sell_rate": 646.94
+  },
+  {
+    "date": "2026-05-10",
+    "buy_rate": 653.0,
+    "sell_rate": 651.3,
+    "avg_buy_rate": 652.46,
+    "avg_sell_rate": 647.68
+  },
+  {
+    "date": "2026-05-11",
+    "buy_rate": 668.0,
+    "sell_rate": 666.0,
+    "avg_buy_rate": 659.85,
+    "avg_sell_rate": 652.95
+  },
+  {
+    "date": "2026-05-12",
+    "buy_rate": 669.5,
+    "sell_rate": 666.5,
+    "avg_buy_rate": 670.36,
+    "avg_sell_rate": 664.16
+  },
+  {
+    "date": "2026-05-13",
+    "buy_rate": 674.05,
+    "sell_rate": 669.56,
+    "avg_buy_rate": 671.67,
+    "avg_sell_rate": 666.91
+  },
+  {
+    "date": "2026-05-14",
+    "buy_rate": 692.75,
+    "sell_rate": 684.9,
+    "avg_buy_rate": 677.02,
+    "avg_sell_rate": 672.39
+  },
+  {
+    "date": "2026-05-15",
+    "buy_rate": 693.9,
+    "sell_rate": 683.53,
+    "avg_buy_rate": 694.15,
+    "avg_sell_rate": 683.99
+  },
+  {
+    "date": "2026-05-16",
+    "buy_rate": 699.9,
+    "sell_rate": 693.0,
+    "avg_buy_rate": 699.82,
+    "avg_sell_rate": 689.21
+  },
+  {
+    "date": "2026-05-17",
+    "buy_rate": 712.75,
+    "sell_rate": 701.55,
+    "avg_buy_rate": 703.22,
+    "avg_sell_rate": 695.03
+  },
+  {
+    "date": "2026-05-18",
+    "buy_rate": 727.15,
+    "sell_rate": 720.0,
+    "avg_buy_rate": 718.72,
+    "avg_sell_rate": 710.52
+  },
+  {
+    "date": "2026-05-19",
+    "buy_rate": 704.49,
+    "sell_rate": 697.55,
+    "avg_buy_rate": 716.93,
+    "avg_sell_rate": 707.41
+  },
+  {
+    "date": "2026-05-20",
+    "buy_rate": 714.45,
+    "sell_rate": 709.75,
+    "avg_buy_rate": 708.14,
+    "avg_sell_rate": 696.09
+  },
+  {
+    "date": "2026-05-21",
+    "buy_rate": 715.48,
+    "sell_rate": 710.22,
+    "avg_buy_rate": 714.52,
+    "avg_sell_rate": 708.23
+  },
+  {
+    "date": "2026-05-22",
+    "buy_rate": 723.48,
+    "sell_rate": 717.65,
+    "avg_buy_rate": 715.54,
+    "avg_sell_rate": 709.45
+  },
+  {
+    "date": "2026-05-23",
+    "buy_rate": 721.0,
+    "sell_rate": 716.5,
+    "avg_buy_rate": 725.22,
+    "avg_sell_rate": 718.91
+  },
+  {
+    "date": "2026-05-24",
+    "buy_rate": 720.49,
+    "sell_rate": 714.15,
+    "avg_buy_rate": 724.41,
+    "avg_sell_rate": 715.1
+  },
+  {
+    "date": "2026-05-25",
+    "buy_rate": 732.35,
+    "sell_rate": 729.04,
+    "avg_buy_rate": 724.04,
+    "avg_sell_rate": 716.28
+  },
+  {
+    "date": "2026-05-26",
+    "buy_rate": 736.3,
+    "sell_rate": 732.35,
+    "avg_buy_rate": 735.4,
+    "avg_sell_rate": 727.61
+  },
+  {
+    "date": "2026-05-27",
+    "buy_rate": 737.4,
+    "sell_rate": 733.61,
+    "avg_buy_rate": 736.76,
+    "avg_sell_rate": 727.87
+  },
+  {
+    "date": "2026-05-28",
+    "buy_rate": 745.42,
+    "sell_rate": 742.0,
+    "avg_buy_rate": 741.7,
+    "avg_sell_rate": 735.73
+  },
+  {
+    "date": "2026-05-29",
+    "buy_rate": 731.85,
+    "sell_rate": 723.0,
+    "avg_buy_rate": 741.12,
+    "avg_sell_rate": 733.75
+  },
+  {
+    "date": "2026-05-30",
+    "buy_rate": 733.25,
+    "sell_rate": 726.55,
+    "avg_buy_rate": 734.57,
+    "avg_sell_rate": 725.25
+  },
+  {
+    "date": "2026-05-31",
+    "buy_rate": 736.0,
+    "sell_rate": 731.75,
+    "avg_buy_rate": 738.11,
+    "avg_sell_rate": 728.87
+  },
+  {
+    "date": "2026-06-01",
+    "buy_rate": 731.99,
+    "sell_rate": 722.03,
+    "avg_buy_rate": 737.24,
+    "avg_sell_rate": 727.52
+  },
+  {
+    "date": "2026-06-02",
+    "buy_rate": 736.84,
+    "sell_rate": 725.85,
+    "avg_buy_rate": 731.99,
+    "avg_sell_rate": 720.18
+  },
+  {
+    "date": "2026-06-03",
+    "buy_rate": 741.0,
+    "sell_rate": 737.0,
+    "avg_buy_rate": 737.26,
+    "avg_sell_rate": 728.71
+  },
+  {
+    "date": "2026-06-04",
+    "buy_rate": 746.35,
+    "sell_rate": 741.4,
+    "avg_buy_rate": 746.03,
+    "avg_sell_rate": 738.86
+  },
+  {
+    "date": "2026-06-05",
+    "buy_rate": 758.5,
+    "sell_rate": 754.0,
+    "avg_buy_rate": 749.85,
+    "avg_sell_rate": 743.62
+  },
+  {
+    "date": "2026-06-06",
+    "buy_rate": 760.0,
+    "sell_rate": 755.2,
+    "avg_buy_rate": 765.83,
+    "avg_sell_rate": 755.93
+  },
+  {
+    "date": "2026-06-07",
+    "buy_rate": 761.0,
+    "sell_rate": 758.0,
+    "avg_buy_rate": 762.01,
+    "avg_sell_rate": 755.17
+  },
+  {
+    "date": "2026-06-08",
+    "buy_rate": 765.99,
+    "sell_rate": 759.6,
+    "avg_buy_rate": 765.74,
+    "avg_sell_rate": 757.35
+  },
+  {
+    "date": "2026-06-09",
+    "buy_rate": 775.5,
+    "sell_rate": 770.0,
+    "avg_buy_rate": 765.56,
+    "avg_sell_rate": 756.07
+  },
+  {
+    "date": "2026-06-10",
+    "buy_rate": 811.9,
+    "sell_rate": 805.0,
+    "avg_buy_rate": 786.47,
+    "avg_sell_rate": 780.0
+  },
+  {
+    "date": "2026-06-11",
+    "buy_rate": 810.75,
+    "sell_rate": 805.5,
+    "avg_buy_rate": 817.18,
+    "avg_sell_rate": 807.51
+  },
+  {
+    "date": "2026-06-12",
+    "buy_rate": 797.5,
+    "sell_rate": 787.75,
+    "avg_buy_rate": 806.19,
+    "avg_sell_rate": 793.42
+  },
+  {
+    "date": "2026-06-13",
+    "buy_rate": 796.95,
+    "sell_rate": 792.5,
+    "avg_buy_rate": 800.43,
+    "avg_sell_rate": 790.77
+  },
+  {
+    "date": "2026-06-14",
+    "buy_rate": 800.5,
+    "sell_rate": 795.1,
+    "avg_buy_rate": 800.15,
+    "avg_sell_rate": 789.79
+  },
+  {
+    "date": "2026-06-15",
+    "buy_rate": 800.25,
+    "sell_rate": 797.55,
+    "avg_buy_rate": 799.54,
+    "avg_sell_rate": 790.15
+  },
+  {
+    "date": "2026-06-16",
+    "buy_rate": 804.26,
+    "sell_rate": 795.75,
+    "avg_buy_rate": 800.03,
+    "avg_sell_rate": 787.78
+  },
+  {
+    "date": "2026-06-17",
+    "buy_rate": 803.0,
+    "sell_rate": 791.85,
+    "avg_buy_rate": 800.73,
+    "avg_sell_rate": 785.55
+  },
+  {
+    "date": "2026-06-18",
+    "buy_rate": 798.71,
+    "sell_rate": 791.5,
+    "avg_buy_rate": 799.22,
+    "avg_sell_rate": 783.86
+  },
+  {
+    "date": "2026-06-19",
+    "buy_rate": 804.35,
+    "sell_rate": 800.0,
+    "avg_buy_rate": 801.6,
+    "avg_sell_rate": 790.84
+  },
+  {
+    "date": "2026-06-20",
+    "buy_rate": 800.99,
+    "sell_rate": 790.0,
+    "avg_buy_rate": 807.1,
+    "avg_sell_rate": 798.76
+  },
+  {
+    "date": "2026-06-21",
+    "buy_rate": 789.05,
+    "sell_rate": 766.0,
+    "avg_buy_rate": 799.24,
+    "avg_sell_rate": 786.37
+  },
+  {
+    "date": "2026-06-22",
+    "buy_rate": 783.5,
+    "sell_rate": 775.0,
+    "avg_buy_rate": 788.9,
+    "avg_sell_rate": 769.66
+  },
+  {
+    "date": "2026-06-23",
+    "buy_rate": 793.3,
+    "sell_rate": 787.11,
+    "avg_buy_rate": 793.94,
+    "avg_sell_rate": 779.49
+  },
+  {
+    "date": "2026-06-24",
+    "buy_rate": 790.0,
+    "sell_rate": 785.0,
+    "avg_buy_rate": 796.48,
+    "avg_sell_rate": 789.64
+  },
+  {
+    "date": "2026-06-25",
+    "buy_rate": 789.45,
+    "sell_rate": 783.7,
+    "avg_buy_rate": 791.74,
+    "avg_sell_rate": 779.67
+  },
+  {
+    "date": "2026-06-26",
+    "buy_rate": 776.9,
+    "sell_rate": 769.75,
+    "avg_buy_rate": 787.78,
+    "avg_sell_rate": 777.38
+  },
+  {
+    "date": "2026-06-27",
+    "buy_rate": 770.25,
+    "sell_rate": 764.08,
+    "avg_buy_rate": 779.99,
+    "avg_sell_rate": 768.3
+  },
+  {
+    "date": "2026-06-28",
+    "buy_rate": 769.45,
+    "sell_rate": 762.61,
+    "avg_buy_rate": 772.07,
+    "avg_sell_rate": 761.51
+  },
+  {
+    "date": "2026-06-29",
+    "buy_rate": 750.14,
+    "sell_rate": 738.81,
+    "avg_buy_rate": 768.48,
+    "avg_sell_rate": 757.44
+  },
+  {
+    "date": "2026-06-30",
+    "buy_rate": 734.45,
+    "sell_rate": 725.25,
+    "avg_buy_rate": 745.38,
+    "avg_sell_rate": 730.64
+  },
+  {
+    "date": "2026-07-01",
+    "buy_rate": 737.24,
+    "sell_rate": 730.9,
+    "avg_buy_rate": 738.37,
+    "avg_sell_rate": 729.02
+  },
+  {
+    "date": "2026-07-02",
+    "buy_rate": 744.51,
+    "sell_rate": 736.5,
+    "avg_buy_rate": 739.64,
+    "avg_sell_rate": 731.19
+  },
+  {
+    "date": "2026-07-03",
+    "buy_rate": 752.45,
+    "sell_rate": 742.75,
+    "avg_buy_rate": 742.48,
+    "avg_sell_rate": 734.13
+  },
+  {
+    "date": "2026-07-04",
+    "buy_rate": 754.85,
+    "sell_rate": 743.0,
+    "avg_buy_rate": 772.65,
+    "avg_sell_rate": 755.34
+  },
+  {
+    "date": "2026-07-05",
+    "buy_rate": 747.0,
+    "sell_rate": 740.6,
+    "avg_buy_rate": 754.84,
+    "avg_sell_rate": 744.79
+  },
+  {
+    "date": "2026-07-06",
+    "buy_rate": 761.95,
+    "sell_rate": 757.5,
+    "avg_buy_rate": 752.04,
+    "avg_sell_rate": 743.19
+  },
+  {
+    "date": "2026-07-07",
+    "buy_rate": 789.98,
+    "sell_rate": 781.0,
+    "avg_buy_rate": 772.37,
+    "avg_sell_rate": 763.58
+  },
+  {
+    "date": "2026-07-08",
+    "buy_rate": 819.5,
+    "sell_rate": 813.75,
+    "avg_buy_rate": 801.62,
+    "avg_sell_rate": 789.9
+  },
+  {
+    "date": "2026-07-09",
+    "buy_rate": 834.71,
+    "sell_rate": 825.21,
+    "avg_buy_rate": 829.56,
+    "avg_sell_rate": 819.29
+  },
+  {
+    "date": "2026-07-10",
+    "buy_rate": 826.21,
+    "sell_rate": 820.7,
+    "avg_buy_rate": 829.32,
+    "avg_sell_rate": 818.68
+  },
+  {
+    "date": "2026-07-11",
+    "buy_rate": 824.0,
+    "sell_rate": 817.11,
+    "avg_buy_rate": 829.47,
+    "avg_sell_rate": 820.81
+  },
+  {
+    "date": "2026-07-12",
+    "buy_rate": 825.0,
+    "sell_rate": 819.8,
+    "avg_buy_rate": 827.31,
+    "avg_sell_rate": 816.3
+  },
+  {
+    "date": "2026-07-13",
+    "buy_rate": 840.95,
+    "sell_rate": 836.3,
+    "avg_buy_rate": 829.75,
+    "avg_sell_rate": 821.3
+  },
+  {
+    "date": "2026-07-14",
+    "buy_rate": 866.12,
+    "sell_rate": 859.0,
+    "avg_buy_rate": 848.24,
+    "avg_sell_rate": 839.73
+  },
+  {
+    "date": "2026-07-15",
+    "buy_rate": 858.0,
+    "sell_rate": 846.08,
+    "avg_buy_rate": 870.66,
+    "avg_sell_rate": 861.56
+  },
+  {
+    "date": "2026-07-16",
+    "buy_rate": 843.9,
+    "sell_rate": 835.1,
+    "avg_buy_rate": 853.19,
+    "avg_sell_rate": 836.89
+  },
+  {
+    "date": "2026-07-17",
+    "buy_rate": 854.5,
+    "sell_rate": 848.33,
+    "avg_buy_rate": 844.31,
+    "avg_sell_rate": 832.83
+  },
+  {
+    "date": "2026-07-18",
+    "buy_rate": 859.07,
+    "sell_rate": 852.8,
+    "avg_buy_rate": 860.12,
+    "avg_sell_rate": 849.59
+  },
+  {
+    "date": "2026-07-19",
+    "buy_rate": 853.29,
+    "sell_rate": 841.5,
+    "avg_buy_rate": 857.36,
+    "avg_sell_rate": 848.22
+  },
+  {
+    "date": "2026-07-20",
+    "buy_rate": 865.0,
+    "sell_rate": 858.61,
+    "avg_buy_rate": 859.07,
+    "avg_sell_rate": 846.83
+  },
+  {
+    "date": "2026-07-21",
+    "buy_rate": 872.0,
+    "sell_rate": 867.26,
+    "avg_buy_rate": 868.83,
+    "avg_sell_rate": 859.46
+  },
+  {
+    "date": "2026-07-22",
+    "buy_rate": 858.0,
+    "sell_rate": 850.4,
+    "avg_buy_rate": 870.37,
+    "avg_sell_rate": 861.95
+  },
+  {
+    "date": "2026-07-23",
+    "buy_rate": 872.0,
+    "sell_rate": 864.6,
+    "avg_buy_rate": 861.72,
+    "avg_sell_rate": 854.67
+  },
+  {
+    "date": "2026-07-24",
+    "buy_rate": 874.05,
+    "sell_rate": 870.77,
+    "avg_buy_rate": 875.6,
+    "avg_sell_rate": 867.95
+  },
+  {
+    "date": "2026-07-25",
+    "buy_rate": 867.0,
+    "sell_rate": 860.0,
+    "avg_buy_rate": 874.23,
+    "avg_sell_rate": 867.91
+  },
+  {
+    "date": "2026-07-26",
+    "buy_rate": 862.5,
+    "sell_rate": 854.97,
+    "avg_buy_rate": 867.96,
+    "avg_sell_rate": 856.24
+  },
+  {
+    "date": "2026-07-27",
+    "buy_rate": 852.25,
+    "sell_rate": 843.5,
+    "avg_buy_rate": 861.15,
+    "avg_sell_rate": 852.13
+  },
+  {
+    "date": "2026-07-28",
+    "buy_rate": 848.0,
+    "sell_rate": 840.4,
+    "avg_buy_rate": 850.41,
+    "avg_sell_rate": 837.39
+  },
+  {
+    "date": "2026-07-29",
+    "buy_rate": 849.25,
+    "sell_rate": 847.11,
+    "avg_buy_rate": 847.92,
+    "avg_sell_rate": 837.69
+  },
+  {
+    "date": "2026-07-30",
+    "buy_rate": 855.22,
+    "sell_rate": 848.97,
+    "avg_buy_rate": 854.35,
+    "avg_sell_rate": 848.09
+  },
+  {
+    "date": "2026-07-31",
+    "buy_rate": 851.48,
+    "sell_rate": 845.05,
+    "avg_buy_rate": 854.61,
+    "avg_sell_rate": 846.2
+  },
+  {
+    "date": "2026-08-01",
+    "buy_rate": 846.86,
+    "sell_rate": 840.35,
+    "avg_buy_rate": 852.19,
+    "avg_sell_rate": 842.54
+  },
+  {
+    "date": "2026-08-02",
+    "buy_rate": 845.49,
+    "sell_rate": 842.01,
+    "avg_buy_rate": 848.59,
+    "avg_sell_rate": 840.79
+  },
+  {
+    "date": "2026-08-03",
+    "buy_rate": 849.25,
+    "sell_rate": 843.13,
+    "avg_buy_rate": 848.79,
+    "avg_sell_rate": 841.8
+  },
+  {
+    "date": "2026-08-04",
+    "buy_rate": 847.4,
+    "sell_rate": 843.01,
+    "avg_buy_rate": 849.66,
+    "avg_sell_rate": 842.51
+  },
+  {
+    "date": "2026-08-05",
+    "buy_rate": 845.0,
+    "sell_rate": 842.05,
+    "avg_buy_rate": 846.7,
+    "avg_sell_rate": 840.35
+  },
+  {
+    "date": "2026-08-06",
+    "buy_rate": 857.15,
+    "sell_rate": 851.81,
+    "avg_buy_rate": 847.8,
+    "avg_sell_rate": 842.42
+  },
+  {
+    "date": "2026-08-07",
+    "buy_rate": 859.71,
+    "sell_rate": 854.35,
+    "avg_buy_rate": 859.34,
+    "avg_sell_rate": 853.11
+  },
+  {
+    "date": "2026-08-08",
+    "buy_rate": 863.65,
+    "sell_rate": 859.5,
+    "avg_buy_rate": 863.12,
+    "avg_sell_rate": 855.75
+  },
+  {
+    "date": "2026-08-09",
+    "buy_rate": 864.95,
+    "sell_rate": 861.08,
+    "avg_buy_rate": 865.32,
+    "avg_sell_rate": 858.03
+  },
+  {
+    "date": "2026-08-10",
+    "buy_rate": 868.95,
+    "sell_rate": 864.76,
+    "avg_buy_rate": 866.73,
+    "avg_sell_rate": 856.32
+  },
+  {
+    "date": "2026-08-11",
+    "buy_rate": 875.99,
+    "sell_rate": 871.55,
+    "avg_buy_rate": 869.48,
+    "avg_sell_rate": 863.03
+  },
+  {
+    "date": "2026-08-12",
+    "buy_rate": 883.3,
+    "sell_rate": 879.25,
+    "avg_buy_rate": 878.47,
+    "avg_sell_rate": 871.63
+  },
+  {
+    "date": "2026-08-13",
+    "buy_rate": 890.0,
+    "sell_rate": 886.1,
+    "avg_buy_rate": 887.67,
+    "avg_sell_rate": 881.03
+  },
+  {
+    "date": "2026-08-14",
+    "buy_rate": 884.22,
+    "sell_rate": 876.06,
+    "avg_buy_rate": 886.66,
+    "avg_sell_rate": 877.99
+  },
+  {
+    "date": "2026-08-15",
+    "buy_rate": 875.0,
+    "sell_rate": 866.5,
+    "avg_buy_rate": 882.3,
+    "avg_sell_rate": 872.22
+  },
+  {
+    "date": "2026-08-16",
+    "buy_rate": 870.97,
+    "sell_rate": 865.5,
+    "avg_buy_rate": 874.16,
+    "avg_sell_rate": 865.29
+  },
+  {
+    "date": "2026-08-17",
+    "buy_rate": 889.45,
+    "sell_rate": 882.76,
+    "avg_buy_rate": 876.95,
+    "avg_sell_rate": 867.45
+  },
+  {
+    "date": "2026-08-18",
+    "buy_rate": 914.0,
+    "sell_rate": 907.8,
+    "avg_buy_rate": 894.61,
+    "avg_sell_rate": 887.27
+  },
+  {
+    "date": "2026-08-19",
+    "buy_rate": 916.9,
+    "sell_rate": 908.75,
+    "avg_buy_rate": 918.06,
+    "avg_sell_rate": 910.12
+  },
+  {
+    "date": "2026-08-20",
+    "buy_rate": 916.7,
+    "sell_rate": 911.0,
+    "avg_buy_rate": 917.56,
+    "avg_sell_rate": 907.41
+  }
+]
