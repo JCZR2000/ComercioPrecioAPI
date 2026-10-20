@@ -50,9 +50,9 @@
   },
   {
     "date": "2026-10-20",
-    "buy_rate": 1004.501,
-    "sell_rate": 1010.39,
-    "avg_buy_rate": 1003.91,
-    "avg_sell_rate": 1010.39
+    "buy_rate": 1005.0,
+    "sell_rate": 1010.49,
+    "avg_buy_rate": 1004.38,
+    "avg_sell_rate": 1010.49
   }
 ]
