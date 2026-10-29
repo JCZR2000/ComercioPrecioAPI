@@ -1996,9 +1996,9 @@
   },
   {
     "date": "2026-10-29",
-    "buy_rate": 1004.365,
-    "sell_rate": 995.01,
-    "avg_buy_rate": 1006.35,
-    "avg_sell_rate": 995.01
+    "buy_rate": 1004.0,
+    "sell_rate": 995.73,
+    "avg_buy_rate": 1005.98,
+    "avg_sell_rate": 995.73
   }
 ]
