@@ -1993,5 +1993,12 @@
     "sell_rate": 1002.05,
     "avg_buy_rate": 1010.12,
     "avg_sell_rate": 1002.05
+  },
+  {
+    "date": "2026-10-29",
+    "buy_rate": 1008.0,
+    "sell_rate": 1002.26,
+    "avg_buy_rate": 1010.36,
+    "avg_sell_rate": 1002.26
   }
 ]
