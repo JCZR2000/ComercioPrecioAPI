@@ -5,12 +5,12 @@
   "usdt_promedio_compra": 1009.84,
   "usdt_promedio_venta": 968.08,
   "bybit_usdt": 1003.0,
-  "bybit_promedio_compra": 1006.33,
-  "bybit_promedio_venta": 995.2,
+  "bybit_promedio_compra": 1006.96,
+  "bybit_promedio_venta": 995.7,
   "okx_usdt": 1002.0,
-  "okx_promedio_compra": 997.36,
+  "okx_promedio_compra": 997.32,
   "okx_promedio_venta": 1017.3,
   "fecha_bcv": "2026-10-30",
-  "timestamp": 1793345420.8960743,
-  "human_date": "2026-10-30 07:30:30"
+  "timestamp": 1793347222.84107,
+  "human_date": "2026-10-30 08:00:32"
 }
