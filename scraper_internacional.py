@@ -14,6 +14,7 @@ from scraper import GitHubStorage, HEADERS
 FILE_NAME = "tasas_internacionales.json"
 RAW_URL = "https://raw.githubusercontent.com/JCZR2000/ComercioPrecioAPI/main/" + FILE_NAME
 MONEDAS = ["BRL", "COP", "PEN", "MXN", "ARS", "CLP", "EUR"]
+OFICIAL_CADA = 3500  # segundos entre consultas a la tasa oficial (algo menos de 1 h)
 MIN_PRECIOS = 3  # menos que esto en Binance -> se prueba Bybit
 P2P_KEYS = ["usdt_compra", "usdt_venta", "usdt_promedio_compra", "usdt_promedio_venta", "usdt_fuente"]
 
@@ -119,9 +120,17 @@ def main():
     previous, sha = load_previous(storage, dry_run)
     prev_monedas = (previous or {}).get("monedas", {})
 
-    oficiales, fecha_oficial = fetch_oficial()
-    if not oficiales and previous:
-        fecha_oficial = previous.get("fecha_oficial")
+    # open.er-api.com pide máx. 1 consulta por hora (si no, bloquea la IP 20 min)
+    oficial_ts = (previous or {}).get("oficial_ts") or 0
+    if previous and time.time() - oficial_ts < OFICIAL_CADA:
+        oficiales, fecha_oficial = {}, previous.get("fecha_oficial")
+        print("Oficial: consultado hace menos de 1 h, se reutiliza")
+    else:
+        oficiales, fecha_oficial = fetch_oficial()
+        if oficiales:
+            oficial_ts = time.time()
+        elif previous:
+            fecha_oficial = previous.get("fecha_oficial")
 
     monedas = {}
     for m in MONEDAS:
@@ -148,6 +157,7 @@ def main():
         "timestamp": time.time(),
         "human_date": now.strftime("%Y-%m-%d %H:%M:%S"),
         "fecha_oficial": fecha_oficial,
+        "oficial_ts": oficial_ts,
         "monedas": monedas,
     }
     if dry_run:
