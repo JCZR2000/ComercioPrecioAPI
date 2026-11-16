@@ -158,7 +158,7 @@ class ExchangeScraper:
         if buy_prices:
             self.data["usdt"] = buy_prices[0] # El mejor precio
             avg_buy = sum(buy_prices) / len(buy_prices)
-            self.data["usdt_promedio_compra"] = round(avg_buy, 2)
+            self.data["usdt_promedio_compra"] = round(avg_buy, 3)
             print(f"✅ Binance Compra: Mejor {self.data['usdt']} | Promedio {self.data['usdt_promedio_compra']}")
         
         # PAUSA TÁCTICA: Esperar 3 segundos para no saturar y evitar ban
@@ -168,7 +168,7 @@ class ExchangeScraper:
         sell_prices = self._fetch_binance_data("SELL", rows=15)
         if sell_prices:
             avg_sell = sum(sell_prices) / len(sell_prices)
-            self.data["usdt_promedio_venta"] = round(avg_sell, 2)
+            self.data["usdt_promedio_venta"] = round(avg_sell, 3)
             print(f"✅ Binance Venta: Promedio {self.data['usdt_promedio_venta']}")
 
     def get_bybit_rates(self):
@@ -204,7 +204,7 @@ class ExchangeScraper:
           prices = [float(x["price"]) for x in items if "price" in x]
           self.data["bybit_usdt"] = prices[0]
           self.data["bybit_promedio_compra"] = round(
-              sum(prices) / len(prices), 2
+              sum(prices) / len(prices), 3
           )
           print(
               f"✅ Bybit Compra: Mejor {self.data['bybit_usdt']} | Promedio"
@@ -236,7 +236,7 @@ class ExchangeScraper:
         if items:
           prices = [float(x["price"]) for x in items if "price" in x]
           self.data["bybit_promedio_venta"] = round(
-              sum(prices) / len(prices), 2
+              sum(prices) / len(prices), 3
           )
           print(f"✅ Bybit Venta: Promedio {self.data['bybit_promedio_venta']}")
       except Exception as e:
@@ -269,7 +269,7 @@ class ExchangeScraper:
         if orders:
           prices = [float(x["price"]) for x in orders[:10]]
           self.data["okx_usdt"] = prices[0]
-          self.data["okx_promedio_compra"] = round(sum(prices) / len(prices), 2)
+          self.data["okx_promedio_compra"] = round(sum(prices) / len(prices), 3)
           print(
               f"✅ OKX Compra: Mejor {self.data['okx_usdt']} | Promedio"
               f" {self.data['okx_promedio_compra']}"
@@ -294,7 +294,7 @@ class ExchangeScraper:
         orders = r.get("data", {}).get("sell", [])
         if orders:
           prices = [float(x["price"]) for x in orders[:10]]
-          self.data["okx_promedio_venta"] = round(sum(prices) / len(prices), 2)
+          self.data["okx_promedio_venta"] = round(sum(prices) / len(prices), 3)
           print(f"✅ OKX Venta: Promedio {self.data['okx_promedio_venta']}")
       except Exception as e:
         print(f"❌ Error OKX Venta: {e}")
