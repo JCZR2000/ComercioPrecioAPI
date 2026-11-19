@@ -1,16 +1,16 @@
 {
   "dolar": 917.7751,
   "euro": 1007.39583851,
-  "usdt": 1076.0,
-  "usdt_promedio_compra": 1080.791,
-  "usdt_promedio_venta": 1067.793,
+  "usdt": 1076.7,
+  "usdt_promedio_compra": 1078.739,
+  "usdt_promedio_venta": 1066.267,
   "bybit_usdt": 1074.998,
-  "bybit_promedio_compra": 1076.888,
-  "bybit_promedio_venta": 1069.883,
+  "bybit_promedio_compra": 1076.553,
+  "bybit_promedio_venta": 1070.022,
   "okx_usdt": 1072.0,
-  "okx_promedio_compra": 1070.121,
-  "okx_promedio_venta": 1079.095,
+  "okx_promedio_compra": 1069.635,
+  "okx_promedio_venta": 1079.037,
   "fecha_bcv": "2026-11-19",
-  "timestamp": 1795093232.4926357,
-  "human_date": "2026-11-19 13:00:41"
+  "timestamp": 1795095026.807009,
+  "human_date": "2026-11-19 13:30:36"
 }
