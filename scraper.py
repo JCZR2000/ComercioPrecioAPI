@@ -30,6 +30,12 @@ class ExchangeScraper:
         "usdt": None,
         "usdt_promedio_compra": None,
         "usdt_promedio_venta": None,
+        # Binance Directo (depósito de Bs vía Insular, saldo VES). Sin caché: null si falla.
+        "binance_directo_compra": None,
+        "binance_directo_venta": None,
+        "binance_directo_activo": None,
+        "binance_directo_deposito_min": None,
+        "binance_directo_deposito_max": None,
         # Bybit
         "bybit_usdt": None,
         "bybit_promedio_compra": None,
@@ -170,6 +176,55 @@ class ExchangeScraper:
             avg_sell = sum(sell_prices) / len(sell_prices)
             self.data["usdt_promedio_venta"] = round(avg_sell, 3)
             print(f"✅ Binance Venta: Promedio {self.data['usdt_promedio_venta']}")
+
+    def _fetch_binance_methods(self, path, params, code):
+        """Devuelve el método de pago `code` de un endpoint público bapi/fiat, o None."""
+        url = f"https://www.binance.com/bapi/fiat/v1/public/fiatpayment/{path}"
+        headers = {
+            "User-Agent": HEADERS.get("User-Agent", "Mozilla/5.0"),
+            "Accept": "application/json",
+        }
+        try:
+            res = requests.get(url, params=params, headers=headers, timeout=15)
+            if res.status_code != 200:
+                print(f"⚠️ Binance Directo Error {res.status_code}: {res.text[:100]}")
+                return None
+            for m in (res.json().get("data") or {}).get("paymentMethods") or []:
+                if m.get("code") == code:
+                    return m
+            print(f"⚠️ Binance Directo: no viene el método {code}")
+        except Exception as e:
+            print(f"❌ Excepción consultando Binance Directo ({code}): {e}")
+        return None
+
+    def get_binance_directo_rates(self):
+        print("Consultando Binance Directo (saldo VES)...")
+        base = {"fiatCurrency": "VES", "cryptoCurrency": "USDT", "country": "VE"}
+        path = "agent/get-buy-and-sell-payment-methods"
+
+        buy = self._fetch_binance_methods(path, {**base, "businessType": "BUY"}, "BUY_WALLET_VES")
+        sell = self._fetch_binance_methods(path, {**base, "businessType": "SELL"}, "SELL_WALLET_VES")
+        dep = self._fetch_binance_methods(
+            "agent/get-deposit-and-withdraw-payment-methods",
+            {"businessType": "DEPOSIT", "fiatCurrency": "VES", "country": "VE"},
+            "DEPOSIT_INSULAR_BANK_TRANSFER",
+        )
+
+        def num(m, key):
+            try:
+                v = float(m[key]) if m else 0.0
+                return v if v > 0 else None
+            except (KeyError, TypeError, ValueError):
+                return None
+
+        d = self.data
+        d["binance_directo_compra"] = round(num(buy, "quotation"), 3) if num(buy, "quotation") else None
+        d["binance_directo_venta"] = round(num(sell, "quotation"), 3) if num(sell, "quotation") else None
+        d["binance_directo_activo"] = (not buy.get("suspended", False)) if buy else None
+        d["binance_directo_deposito_min"] = num(dep, "fiatMinLimit")
+        d["binance_directo_deposito_max"] = num(dep, "fiatMaxLimit")
+        print(f"✅ Binance Directo: compra {d['binance_directo_compra']} | venta {d['binance_directo_venta']} "
+              f"| activo {d['binance_directo_activo']} | depósito {d['binance_directo_deposito_min']}–{d['binance_directo_deposito_max']}")
 
     def get_bybit_rates(self):
       print("Consultando Bybit P2P...")
@@ -398,6 +453,7 @@ def main():
     scraper = ExchangeScraper()
     scraper.get_bcv_rates()
     scraper.get_binance_rates()
+    scraper.get_binance_directo_rates()
     scraper.get_bybit_rates()
     scraper.get_okx_rates()
 
