@@ -220,7 +220,8 @@ class ExchangeScraper:
         d = self.data
         d["binance_directo_compra"] = round(num(buy, "quotation"), 3) if num(buy, "quotation") else None
         d["binance_directo_venta"] = round(num(sell, "quotation"), 3) if num(sell, "quotation") else None
-        d["binance_directo_activo"] = (not buy.get("suspended", False)) if buy else None
+        # Activo solo si se puede comprar y depositar (el depósito vía Insular puede suspenderse aparte)
+        d["binance_directo_activo"] = (not buy.get("suspended", False) and not (dep or {}).get("suspended", False)) if buy else None
         d["binance_directo_deposito_min"] = num(dep, "fiatMinLimit")
         d["binance_directo_deposito_max"] = num(dep, "fiatMaxLimit")
         print(f"✅ Binance Directo: compra {d['binance_directo_compra']} | venta {d['binance_directo_venta']} "
