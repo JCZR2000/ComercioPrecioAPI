@@ -1,73 +1,73 @@
 {
-  "timestamp": 1795485662.5447917,
-  "human_date": "2026-11-24 02:01:02",
+  "timestamp": 1795487462.3758218,
+  "human_date": "2026-11-24 02:31:02",
   "fecha_oficial": "2026-11-24",
   "oficial_ts": 1795485627.4990318,
   "monedas": {
     "BRL": {
       "oficial": 5.958461,
-      "usdt_compra": 5.988,
-      "usdt_venta": 5.936,
-      "usdt_promedio_compra": 6.0195,
-      "usdt_promedio_venta": 5.9003,
+      "usdt_compra": 5.989,
+      "usdt_venta": 5.921,
+      "usdt_promedio_compra": 6.0215,
+      "usdt_promedio_venta": 5.8836,
       "usdt_fuente": "bybit",
-      "usdt_timestamp": 1795485634.4661446
+      "usdt_timestamp": 1795487433.3137455
     },
     "COP": {
       "oficial": 3498.224647,
-      "usdt_compra": 3480.0,
+      "usdt_compra": 3479.0,
       "usdt_venta": 3480.0,
-      "usdt_promedio_compra": 3486.072,
-      "usdt_promedio_venta": 3475.265,
+      "usdt_promedio_compra": 3483.299,
+      "usdt_promedio_venta": 3471.835,
       "usdt_fuente": "binance",
-      "usdt_timestamp": 1795485638.83703
+      "usdt_timestamp": 1795487437.8081028
     },
     "PEN": {
       "oficial": 3.456345,
       "usdt_compra": 3.483,
-      "usdt_venta": 3.486,
-      "usdt_promedio_compra": 3.4831,
-      "usdt_promedio_venta": 3.4764,
+      "usdt_venta": 3.483,
+      "usdt_promedio_compra": 3.4841,
+      "usdt_promedio_venta": 3.4762,
       "usdt_fuente": "binance",
-      "usdt_timestamp": 1795485643.1515467
+      "usdt_timestamp": 1795487442.2929099
     },
     "MXN": {
       "oficial": 19.184157,
-      "usdt_compra": 19.23,
-      "usdt_venta": 19.21,
-      "usdt_promedio_compra": 19.26,
-      "usdt_promedio_venta": 19.163,
+      "usdt_compra": 19.25,
+      "usdt_venta": 19.18,
+      "usdt_promedio_compra": 19.266,
+      "usdt_promedio_venta": 19.155,
       "usdt_fuente": "binance",
-      "usdt_timestamp": 1795485647.4597194
+      "usdt_timestamp": 1795487446.7730439
     },
     "ARS": {
       "oficial": 1575.9572,
-      "usdt_compra": 1767.3,
-      "usdt_venta": 1762.9,
-      "usdt_promedio_compra": 1768.105,
-      "usdt_promedio_venta": 1762.24,
+      "usdt_compra": 1767.4,
+      "usdt_venta": 1762.6,
+      "usdt_promedio_compra": 1768.215,
+      "usdt_promedio_venta": 1762.116,
       "usdt_fuente": "binance",
-      "usdt_timestamp": 1795485651.7551434,
+      "usdt_timestamp": 1795487451.3250823,
       "blue_compra": 1655.0,
       "blue_venta": 1675.0
     },
     "CLP": {
       "oficial": 1023.741046,
-      "usdt_compra": 1021.5,
-      "usdt_venta": 1037.21,
-      "usdt_promedio_compra": 1021.73,
-      "usdt_promedio_venta": 1022.296,
+      "usdt_compra": 1021.0,
+      "usdt_venta": 1037.36,
+      "usdt_promedio_compra": 1021.757,
+      "usdt_promedio_venta": 1020.941,
       "usdt_fuente": "binance",
-      "usdt_timestamp": 1795485656.212869
+      "usdt_timestamp": 1795487455.8914793
     },
     "EUR": {
       "oficial": 0.915641,
-      "usdt_compra": 0.92,
+      "usdt_compra": 0.922,
       "usdt_venta": 1.0,
-      "usdt_promedio_compra": 0.9225,
-      "usdt_promedio_venta": 0.9405,
+      "usdt_promedio_compra": 0.9229,
+      "usdt_promedio_venta": 0.9401,
       "usdt_fuente": "binance",
-      "usdt_timestamp": 1795485660.5426972
+      "usdt_timestamp": 1795487460.3737588
     }
   }
 }
