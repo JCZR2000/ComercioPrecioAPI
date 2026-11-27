@@ -1,0 +1,262 @@
+{
+  "revisado": "2026-11-27",
+  "plataformas": [
+    {
+      "id": "paypal",
+      "nombre": "PayPal",
+      "cobro_pct": 5.4,
+      "cobro_fijo": 0.3,
+      "retiro_pct": 0.0,
+      "retiro_fijo": 0.0,
+      "conversion_pct": 3.5,
+      "conversion_fijo": 0.0,
+      "tasa": "oficial",
+      "paises": null,
+      "nota": "Comisión general de pago comercial internacional.",
+      "fuente": "paypal.com, comisiones para comercios y de cuenta personal",
+      "url": "https://www.paypal.com/co/business/paypal-business-fees",
+      "por_pais": {
+        "US": {
+          "cobro_pct": 3.49,
+          "cobro_fijo": 0.49,
+          "nota": "Pago nacional con PayPal Checkout o factura: 3,49 % + 0,49 USD. «Bienes y servicios» cuesta 2,99 %.",
+          "url": "https://www.paypal.com/us/business/paypal-business-fees",
+          "conversion_pct": 0.0,
+          "retiro_fijo": 0.0
+        },
+        "ES": {
+          "cobro_pct": 4.89,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 4,89 % + 0,30 USD (incluye el recargo internacional). Conversión: 3 %.",
+          "url": "https://www.paypal.com/es/business/paypal-business-fees",
+          "conversion_pct": 3.0,
+          "retiro_fijo": 0.0
+        },
+        "IT": {
+          "cobro_pct": 5.39,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,39 % + 0,30 USD (incluye el recargo internacional). Conversión: 3 %.",
+          "url": "https://www.paypal.com/it/business/paypal-business-fees",
+          "conversion_pct": 3.0,
+          "retiro_fijo": 0.0
+        },
+        "PT": {
+          "cobro_pct": 4.89,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 4,89 % + 0,30 USD (incluye el recargo internacional). Conversión: 3 %.",
+          "url": "https://www.paypal.com/pt/business/paypal-business-fees",
+          "conversion_pct": 3.0,
+          "retiro_fijo": 0.0
+        },
+        "FR": {
+          "cobro_pct": 4.89,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 4,89 % + 0,30 USD (incluye el recargo internacional). Conversión: 3 %.",
+          "url": "https://www.paypal.com/fr/business/paypal-business-fees",
+          "conversion_pct": 3.0,
+          "retiro_fijo": 0.0
+        },
+        "DE": {
+          "cobro_pct": 4.98,
+          "cobro_fijo": 0.49,
+          "nota": "Pago comercial de un cliente en EE. UU.: 4,98 % + 0,49 USD (incluye el recargo internacional). Conversión: 3 %.",
+          "url": "https://www.paypal.com/de/business/paypal-business-fees",
+          "conversion_pct": 3.0,
+          "retiro_fijo": 0.0
+        },
+        "CO": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. Retiro al banco: COP 3.500.",
+          "url": "https://www.paypal.com/co/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 0.98
+        },
+        "PE": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. Retiro al banco: PEN 4.",
+          "url": "https://www.paypal.com/pe/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 1.15
+        },
+        "CL": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. Retiro al banco: CLP 800.",
+          "url": "https://www.paypal.com/cl/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 0.77
+        },
+        "AR": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. Retiro al banco: ARS 75.",
+          "url": "https://www.paypal.com/ar/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 0.05
+        },
+        "VE": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. PayPal no cobra el retiro al banco, si está disponible.",
+          "url": "https://www.paypal.com/co/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 0.0
+        },
+        "BR": {
+          "cobro_pct": 6.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 6,40 % + 0,30 USD (incluye el recargo internacional). Conversión: 3,5 %.",
+          "url": "https://www.paypal.com/br/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 0.0
+        },
+        "MX": {
+          "cobro_pct": 5.16,
+          "cobro_fijo": 0.35,
+          "nota": "Pago comercial de un cliente en EE. UU.: 3,95 % + 0,50 % + 0,30 USD, más IVA del 16 %. Conversión: 3,5 %.",
+          "url": "https://www.paypal.com/mx/business/paypal-business-fees",
+          "conversion_pct": 3.5,
+          "retiro_fijo": 0.0
+        },
+        "EC": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Retiro al banco: 0,50 %, mínimo 10 USD (se calcula el mínimo; desde 2.000 USD cuesta más).",
+          "url": "https://www.paypal.com/ec/business/paypal-business-fees",
+          "conversion_pct": 0.0,
+          "retiro_fijo": 10.0
+        },
+        "PA": {
+          "cobro_pct": 5.4,
+          "cobro_fijo": 0.3,
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Retiro al banco: 1 %, mínimo 15 USD (se calcula el mínimo; desde 1.500 USD cuesta más).",
+          "url": "https://www.paypal.com/pa/business/paypal-business-fees",
+          "conversion_pct": 0.0,
+          "retiro_fijo": 15.0
+        }
+      }
+    },
+    {
+      "id": "wise",
+      "nombre": "Wise",
+      "cobro_pct": 0.0,
+      "cobro_fijo": 0.0,
+      "retiro_pct": 0.0,
+      "retiro_fijo": 0.0,
+      "conversion_pct": 2.93,
+      "conversion_fijo": 0.0,
+      "tasa": "oficial",
+      "paises": [
+        "US",
+        "ES",
+        "IT",
+        "PT",
+        "FR",
+        "DE",
+        "CO",
+        "PE",
+        "CL",
+        "AR",
+        "BR"
+      ],
+      "nota": "Cobro por transferencia ACH desde EE. UU. (gratis; por wire o Swift cuesta 6,11 USD). Conversión con la tasa media, medida con 1.000 USD; incluye el IOF en Brasil y los cargos temporales en Perú y Argentina.",
+      "fuente": "wise.com, calculadora y centro de ayuda",
+      "url": "https://wise.com/us/pricing/send-money",
+      "conversion_por_moneda": {
+        "EUR": {
+          "pct": 0.38,
+          "fijo": 0.0
+        },
+        "BRL": {
+          "pct": 0.94,
+          "fijo": 0.0
+        },
+        "COP": {
+          "pct": 1.54,
+          "fijo": 0.0
+        },
+        "PEN": {
+          "pct": 2.93,
+          "fijo": 0.0
+        },
+        "MXN": {
+          "pct": 0.6,
+          "fijo": 0.0
+        },
+        "ARS": {
+          "pct": 1.65,
+          "fijo": 0.0
+        },
+        "CLP": {
+          "pct": 0.87,
+          "fijo": 0.0
+        }
+      }
+    },
+    {
+      "id": "payoneer",
+      "nombre": "Payoneer",
+      "cobro_pct": 1.0,
+      "cobro_fijo": 0.0,
+      "retiro_pct": 0.0,
+      "retiro_fijo": 0.0,
+      "conversion_pct": 4.0,
+      "conversion_fijo": 0.0,
+      "tasa": "oficial",
+      "paises": null,
+      "nota": "Transferencia de tu cliente a tu cuenta receptora en USD: 1 % (mínimo 1 USD). Retiro en tu moneda: de 1,2 % a 4 %; se calcula el 4 %. Cuota de 29,95 USD al año si recibes menos de 6.000 USD.",
+      "fuente": "payoneer.com/pricing (actualizada el 2026-01-01)",
+      "url": "https://www.payoneer.com/pricing/",
+      "por_pais": {
+        "US": {
+          "cobro_pct": 0.0,
+          "retiro_fijo": 1.5,
+          "conversion_pct": 0.0,
+          "nota": "Cobro en tu cuenta receptora en USD gratis; retiro a tu banco en EE. UU.: 1,50 USD. Cuota de 29,95 USD al año si recibes menos de 6.000 USD."
+        },
+        "EC": {
+          "retiro_pct": 4.0,
+          "nota": "Cobro: 1 % (mínimo 1 USD). Retiro a tu banco: de 1,2 % a 4 %; se calcula el 4 %."
+        },
+        "PA": {
+          "retiro_pct": 4.0,
+          "nota": "Cobro: 1 % (mínimo 1 USD). Retiro a tu banco: de 1,2 % a 4 %; se calcula el 4 %."
+        }
+      }
+    },
+    {
+      "id": "zelle",
+      "nombre": "Zelle",
+      "cobro_pct": 0.0,
+      "cobro_fijo": 0.0,
+      "retiro_pct": 0.0,
+      "retiro_fijo": 0.0,
+      "conversion_pct": 0.0,
+      "conversion_fijo": 0.0,
+      "tasa": "oficial",
+      "paises": [
+        "US"
+      ],
+      "nota": "Sin comisión. Solo con cuenta bancaria en EE. UU.; tu banco puede poner límites.",
+      "fuente": "zellepay.com",
+      "url": "https://www.zellepay.com"
+    },
+    {
+      "id": "binance",
+      "nombre": "Binance",
+      "cobro_pct": 0.0,
+      "cobro_fijo": 0.0,
+      "retiro_pct": 0.0,
+      "retiro_fijo": 0.0,
+      "conversion_pct": 0.0,
+      "conversion_fijo": 0.0,
+      "tasa": "p2p",
+      "paises": null,
+      "nota": "Cobro con Binance Pay sin comisión. Venta de USDT en la sección P2P tomando un anuncio, sin comisión (la zona Exprés puede cobrar).",
+      "fuente": "binance.com, Binance Pay y comisiones P2P",
+      "url": "https://www.binance.com/es/fee/p2pFeeRate"
+    }
+  ]
+}
