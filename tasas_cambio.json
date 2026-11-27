@@ -1,11 +1,11 @@
 {
   "dolar": 926.3592,
   "euro": 1016.86449384,
-  "usdt": 1094.7,
-  "usdt_promedio_compra": 1114.729,
-  "usdt_promedio_venta": 1022.122,
+  "usdt": 1094.999,
+  "usdt_promedio_compra": 1117.082,
+  "usdt_promedio_venta": 1022.255,
   "binance_directo_compra": 1084.54,
-  "binance_directo_venta": 1073.67,
+  "binance_directo_venta": 1073.7,
   "binance_directo_activo": true,
   "binance_directo_deposito_min": 2000.0,
   "binance_directo_deposito_max": 4999999.0,
@@ -16,6 +16,6 @@
   "okx_promedio_compra": 1058.198,
   "okx_promedio_venta": 1114.634,
   "fecha_bcv": "2026-11-27",
-  "timestamp": 1795768222.7753656,
-  "human_date": "2026-11-27 08:30:33"
+  "timestamp": 1795770025.5701425,
+  "human_date": "2026-11-27 09:00:36"
 }
