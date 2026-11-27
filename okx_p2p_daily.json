@@ -313,5 +313,12 @@
     "sell_rate": 1096.246,
     "avg_buy_rate": 1089.846,
     "avg_sell_rate": 1096.246
+  },
+  {
+    "date": "2026-11-27",
+    "buy_rate": 1101.0,
+    "sell_rate": 1096.736,
+    "avg_buy_rate": 1090.647,
+    "avg_sell_rate": 1096.736
   }
 ]
