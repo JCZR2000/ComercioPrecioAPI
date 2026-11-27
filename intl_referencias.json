@@ -1,0 +1,802 @@
+{
+  "version": 1,
+  "generado": "2026-11-27T17:03:06Z",
+  "us_sales_tax": {
+    "fuente": "Kintsugi",
+    "licencia": "CC BY 4.0",
+    "url": "https://trykintsugi.com/data/us-state-sales-tax-rates.json",
+    "fecha_datos": "2026-11-01",
+    "estados": [
+      {
+        "code": "AL",
+        "nombre": "Alabama",
+        "estatal": 4,
+        "comun": 10,
+        "min": 5,
+        "max": 13
+      },
+      {
+        "code": "AK",
+        "nombre": "Alaska",
+        "estatal": 0,
+        "comun": 0,
+        "min": 0,
+        "max": 7.85
+      },
+      {
+        "code": "AZ",
+        "nombre": "Arizona",
+        "estatal": 5.6,
+        "comun": 9.1,
+        "min": 5.6,
+        "max": 11.1
+      },
+      {
+        "code": "AR",
+        "nombre": "Arkansas",
+        "estatal": 6.5,
+        "comun": 9.5,
+        "min": 6.5,
+        "max": 12.625
+      },
+      {
+        "code": "CA",
+        "nombre": "California",
+        "estatal": 7.25,
+        "comun": 7.75,
+        "min": 7.25,
+        "max": 11.75
+      },
+      {
+        "code": "CO",
+        "nombre": "Colorado",
+        "estatal": 2.9,
+        "comun": 9.15,
+        "min": 2.9,
+        "max": 11.2
+      },
+      {
+        "code": "CT",
+        "nombre": "Connecticut",
+        "estatal": 6.35,
+        "comun": 6.35,
+        "min": 6.35,
+        "max": 6.35
+      },
+      {
+        "code": "DE",
+        "nombre": "Delaware",
+        "estatal": 0,
+        "comun": 0,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "code": "FL",
+        "nombre": "Florida",
+        "estatal": 6,
+        "comun": 7,
+        "min": 6,
+        "max": 8
+      },
+      {
+        "code": "GA",
+        "nombre": "Georgia",
+        "estatal": 4,
+        "comun": 8,
+        "min": 6,
+        "max": 9
+      },
+      {
+        "code": "HI",
+        "nombre": "Hawaii",
+        "estatal": 4,
+        "comun": 4.5,
+        "min": 4.5,
+        "max": 4.5
+      },
+      {
+        "code": "ID",
+        "nombre": "Idaho",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 9
+      },
+      {
+        "code": "IL",
+        "nombre": "Illinois",
+        "estatal": 6.25,
+        "comun": 7.25,
+        "min": 6.25,
+        "max": 11.25
+      },
+      {
+        "code": "IN",
+        "nombre": "Indiana",
+        "estatal": 7,
+        "comun": 7,
+        "min": 7,
+        "max": 7
+      },
+      {
+        "code": "IA",
+        "nombre": "Iowa",
+        "estatal": 6,
+        "comun": 7,
+        "min": 6,
+        "max": 7
+      },
+      {
+        "code": "KS",
+        "nombre": "Kansas",
+        "estatal": 6.5,
+        "comun": 7.5,
+        "min": 6.5,
+        "max": 10.75
+      },
+      {
+        "code": "KY",
+        "nombre": "Kentucky",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 6
+      },
+      {
+        "code": "LA",
+        "nombre": "Louisiana",
+        "estatal": 5,
+        "comun": 10,
+        "min": 5,
+        "max": 12.916
+      },
+      {
+        "code": "ME",
+        "nombre": "Maine",
+        "estatal": 5.5,
+        "comun": 5.5,
+        "min": 5.5,
+        "max": 5.5
+      },
+      {
+        "code": "MD",
+        "nombre": "Maryland",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 6
+      },
+      {
+        "code": "MA",
+        "nombre": "Massachusetts",
+        "estatal": 6.25,
+        "comun": 6.25,
+        "min": 6.25,
+        "max": 6.25
+      },
+      {
+        "code": "MI",
+        "nombre": "Michigan",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 6
+      },
+      {
+        "code": "MN",
+        "nombre": "Minnesota",
+        "estatal": 6.875,
+        "comun": 7.375,
+        "min": 6.875,
+        "max": 11.875
+      },
+      {
+        "code": "MS",
+        "nombre": "Mississippi",
+        "estatal": 7,
+        "comun": 7,
+        "min": 7,
+        "max": 8
+      },
+      {
+        "code": "MO",
+        "nombre": "Missouri",
+        "estatal": 4.225,
+        "comun": 8.725,
+        "min": 5.225,
+        "max": 12.488
+      },
+      {
+        "code": "MT",
+        "nombre": "Montana",
+        "estatal": 0,
+        "comun": 0,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "code": "NE",
+        "nombre": "Nebraska",
+        "estatal": 5.5,
+        "comun": 5.5,
+        "min": 5.5,
+        "max": 7.5
+      },
+      {
+        "code": "NV",
+        "nombre": "Nevada",
+        "estatal": 6.85,
+        "comun": 8.375,
+        "min": 6.85,
+        "max": 8.375
+      },
+      {
+        "code": "NH",
+        "nombre": "New Hampshire",
+        "estatal": 0,
+        "comun": 0,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "code": "NJ",
+        "nombre": "New Jersey",
+        "estatal": 6.625,
+        "comun": 6.625,
+        "min": 6.625,
+        "max": 6.625
+      },
+      {
+        "code": "NM",
+        "nombre": "New Mexico",
+        "estatal": 4.875,
+        "comun": 7.625,
+        "min": 5.25,
+        "max": 9.425
+      },
+      {
+        "code": "NY",
+        "nombre": "New York",
+        "estatal": 4,
+        "comun": 8,
+        "min": 7,
+        "max": 8.875
+      },
+      {
+        "code": "NC",
+        "nombre": "North Carolina",
+        "estatal": 4.75,
+        "comun": 7,
+        "min": 6.75,
+        "max": 8.25
+      },
+      {
+        "code": "ND",
+        "nombre": "North Dakota",
+        "estatal": 5,
+        "comun": 5,
+        "min": 5,
+        "max": 8.75
+      },
+      {
+        "code": "OH",
+        "nombre": "Ohio",
+        "estatal": 5.75,
+        "comun": 7.25,
+        "min": 6.5,
+        "max": 8.25
+      },
+      {
+        "code": "OK",
+        "nombre": "Oklahoma",
+        "estatal": 4.5,
+        "comun": 9.5,
+        "min": 4.85,
+        "max": 11.5
+      },
+      {
+        "code": "OR",
+        "nombre": "Oregon",
+        "estatal": 0,
+        "comun": 0,
+        "min": 0,
+        "max": 0
+      },
+      {
+        "code": "PA",
+        "nombre": "Pennsylvania",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 8
+      },
+      {
+        "code": "RI",
+        "nombre": "Rhode Island",
+        "estatal": 7,
+        "comun": 7,
+        "min": 7,
+        "max": 7
+      },
+      {
+        "code": "SC",
+        "nombre": "South Carolina",
+        "estatal": 6,
+        "comun": 8,
+        "min": 6,
+        "max": 9
+      },
+      {
+        "code": "SD",
+        "nombre": "South Dakota",
+        "estatal": 4.2,
+        "comun": 6.2,
+        "min": 4.2,
+        "max": 7.2
+      },
+      {
+        "code": "TN",
+        "nombre": "Tennessee",
+        "estatal": 7,
+        "comun": 9.75,
+        "min": 9,
+        "max": 9.75
+      },
+      {
+        "code": "TX",
+        "nombre": "Texas",
+        "estatal": 6.25,
+        "comun": 8.25,
+        "min": 6.25,
+        "max": 8.25
+      },
+      {
+        "code": "UT",
+        "nombre": "Utah",
+        "estatal": 4.85,
+        "comun": 7.45,
+        "min": 6.35,
+        "max": 10.05
+      },
+      {
+        "code": "VT",
+        "nombre": "Vermont",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 7
+      },
+      {
+        "code": "VA",
+        "nombre": "Virginia",
+        "estatal": 4.3,
+        "comun": 5.3,
+        "min": 5.3,
+        "max": 7
+      },
+      {
+        "code": "WA",
+        "nombre": "Washington",
+        "estatal": 6.5,
+        "comun": 8,
+        "min": 7.6,
+        "max": 10.7
+      },
+      {
+        "code": "DC",
+        "nombre": "Washington DC",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 6
+      },
+      {
+        "code": "WV",
+        "nombre": "West Virginia",
+        "estatal": 6,
+        "comun": 6,
+        "min": 6,
+        "max": 7
+      },
+      {
+        "code": "WI",
+        "nombre": "Wisconsin",
+        "estatal": 5,
+        "comun": 5.5,
+        "min": 5,
+        "max": 7.9
+      },
+      {
+        "code": "WY",
+        "nombre": "Wyoming",
+        "estatal": 4,
+        "comun": 5,
+        "min": 4,
+        "max": 9
+      }
+    ]
+  },
+  "salario_minimo": {
+    "revisado": "2026-11-27",
+    "us": {
+      "federal": 7.25,
+      "fuente": "U.S. Department of Labor, revisi\u00f3n manual",
+      "url": "https://www.dol.gov/agencies/whd/minimum-wage/state",
+      "estados": [
+        {
+          "code": "AL",
+          "hora": 7.25
+        },
+        {
+          "code": "AK",
+          "hora": 14.0
+        },
+        {
+          "code": "AZ",
+          "hora": 15.15
+        },
+        {
+          "code": "AR",
+          "hora": 11.0
+        },
+        {
+          "code": "CA",
+          "hora": 16.9
+        },
+        {
+          "code": "CO",
+          "hora": 15.16
+        },
+        {
+          "code": "CT",
+          "hora": 16.94
+        },
+        {
+          "code": "DE",
+          "hora": 15.0
+        },
+        {
+          "code": "DC",
+          "hora": 18.4
+        },
+        {
+          "code": "FL",
+          "hora": 15.0
+        },
+        {
+          "code": "GA",
+          "hora": 7.25
+        },
+        {
+          "code": "HI",
+          "hora": 16.0
+        },
+        {
+          "code": "ID",
+          "hora": 7.25
+        },
+        {
+          "code": "IL",
+          "hora": 15.0
+        },
+        {
+          "code": "IN",
+          "hora": 7.25
+        },
+        {
+          "code": "IA",
+          "hora": 7.25
+        },
+        {
+          "code": "KS",
+          "hora": 7.25
+        },
+        {
+          "code": "KY",
+          "hora": 7.25
+        },
+        {
+          "code": "LA",
+          "hora": 7.25
+        },
+        {
+          "code": "ME",
+          "hora": 15.1
+        },
+        {
+          "code": "MD",
+          "hora": 15.0
+        },
+        {
+          "code": "MA",
+          "hora": 15.0
+        },
+        {
+          "code": "MI",
+          "hora": 13.73,
+          "proximos": [
+            {
+              "desde": "2027-01-01",
+              "monto": 15.0
+            }
+          ]
+        },
+        {
+          "code": "MN",
+          "hora": 11.41
+        },
+        {
+          "code": "MS",
+          "hora": 7.25
+        },
+        {
+          "code": "MO",
+          "hora": 15.0
+        },
+        {
+          "code": "MT",
+          "hora": 10.85
+        },
+        {
+          "code": "NE",
+          "hora": 15.0
+        },
+        {
+          "code": "NV",
+          "hora": 12.0
+        },
+        {
+          "code": "NH",
+          "hora": 7.25
+        },
+        {
+          "code": "NJ",
+          "hora": 15.92,
+          "nota": "15,23 para empleadores con menos de 6 empleados y trabajo de temporada."
+        },
+        {
+          "code": "NM",
+          "hora": 12.0
+        },
+        {
+          "code": "NY",
+          "hora": 16.0,
+          "nota": "17,00 en la ciudad de Nueva York, Nassau, Suffolk y Westchester; 16,00 en el resto del estado."
+        },
+        {
+          "code": "NC",
+          "hora": 7.25
+        },
+        {
+          "code": "ND",
+          "hora": 7.25
+        },
+        {
+          "code": "OH",
+          "hora": 11.0,
+          "nota": "7,25 en empresas con ventas anuales menores de 405.000 d\u00f3lares."
+        },
+        {
+          "code": "OK",
+          "hora": 7.25
+        },
+        {
+          "code": "OR",
+          "hora": 15.55,
+          "nota": "16,80 en el \u00e1rea metropolitana de Portland; 14,55 en condados no urbanos."
+        },
+        {
+          "code": "PA",
+          "hora": 7.25
+        },
+        {
+          "code": "RI",
+          "hora": 16.0
+        },
+        {
+          "code": "SC",
+          "hora": 7.25
+        },
+        {
+          "code": "SD",
+          "hora": 11.85
+        },
+        {
+          "code": "TN",
+          "hora": 7.25
+        },
+        {
+          "code": "TX",
+          "hora": 7.25
+        },
+        {
+          "code": "UT",
+          "hora": 7.25
+        },
+        {
+          "code": "VT",
+          "hora": 14.42
+        },
+        {
+          "code": "VA",
+          "hora": 12.77
+        },
+        {
+          "code": "WA",
+          "hora": 17.13
+        },
+        {
+          "code": "WV",
+          "hora": 8.75
+        },
+        {
+          "code": "WI",
+          "hora": 7.25
+        },
+        {
+          "code": "WY",
+          "hora": 7.25
+        }
+      ]
+    },
+    "paises": [
+      {
+        "code": "ES",
+        "monto": 1221,
+        "moneda": "EUR",
+        "periodo": "mensual",
+        "vigente_desde": "2026-01-01",
+        "fuente": "BOE, Real Decreto 126/2026",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-3815",
+        "pagas": 14,
+        "nota": "14 pagas al a\u00f1o.",
+        "proximos": [
+          {
+            "desde": "2027-01-01",
+            "monto": 1286,
+            "fuente": "BOE, Real Decreto 1013/2026"
+          }
+        ]
+      },
+      {
+        "code": "PT",
+        "monto": 920,
+        "moneda": "EUR",
+        "periodo": "mensual",
+        "vigente_desde": "2026-01-01",
+        "fuente": "Di\u00e1rio da Rep\u00fablica, Decreto-Lei 139/2025",
+        "url": "https://www.dgert.gov.pt/retribuicao-minima-mensal-garantida-para-2026",
+        "pagas": 14,
+        "nota": "Continente; 14 pagas al a\u00f1o."
+      },
+      {
+        "code": "FR",
+        "monto": 1867.02,
+        "moneda": "EUR",
+        "periodo": "mensual",
+        "vigente_desde": "2026-06-01",
+        "fuente": "Urssaf (SMIC)",
+        "url": "https://www.urssaf.fr/accueil/outils-documentation/taux-baremes/montant-smic.html",
+        "nota": "Bruto, 35 horas por semana.",
+        "proximos": [
+          {
+            "desde": "2026-12-01",
+            "monto": 1897.35,
+            "fuente": "Code du travail num\u00e9rique (d\u00e9cret du 25-11-2026)"
+          }
+        ]
+      },
+      {
+        "code": "DE",
+        "monto": 13.9,
+        "moneda": "EUR",
+        "periodo": "hora",
+        "vigente_desde": "2026-01-01",
+        "fuente": "Bundesregierung",
+        "url": "https://www.bundesregierung.de/breg-de/aktuelles/mindestlohn-steigt-2391010",
+        "proximos": [
+          {
+            "desde": "2027-01-01",
+            "monto": 14.6
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "monto": 1750905,
+        "moneda": "COP",
+        "periodo": "mensual",
+        "vigente_desde": "2026-01-01",
+        "fuente": "Decreto 1469 de 2025",
+        "url": "https://www.infobae.com/colombia/2026/07/17/consejo-de-estado-revoco-la-suspension-del-decreto-del-gobierno-petro-que-subio-23-el-salario-minimo-de-2026/",
+        "nota": "Sin auxilio de transporte (249.095)."
+      },
+      {
+        "code": "PE",
+        "monto": 1230,
+        "moneda": "PEN",
+        "periodo": "mensual",
+        "vigente_desde": "2026-10-01",
+        "fuente": "El Peruano, Decreto Supremo 015-2026-TR",
+        "url": "https://busquedas.elperuano.pe/dispositivo/EX/2559163-1"
+      },
+      {
+        "code": "CL",
+        "monto": 553553,
+        "moneda": "CLP",
+        "periodo": "mensual",
+        "vigente_desde": "2026-05-01",
+        "fuente": "Direcci\u00f3n del Trabajo, Ley 21.830",
+        "url": "https://www.dt.gob.cl/portal/1628/w3-article-60141.html",
+        "nota": "De 18 a 65 a\u00f1os."
+      },
+      {
+        "code": "AR",
+        "monto": 398800,
+        "moneda": "ARS",
+        "periodo": "mensual",
+        "vigente_desde": "2026-11-01",
+        "fuente": "Consejo del Salario, Resoluci\u00f3n 4/2026",
+        "url": "https://www.argentina.gob.ar/trabajo/consejodelsalario",
+        "proximos": [
+          {
+            "desde": "2026-12-01",
+            "monto": 406400
+          },
+          {
+            "desde": "2027-01-01",
+            "monto": 414200
+          },
+          {
+            "desde": "2027-02-01",
+            "monto": 422000
+          },
+          {
+            "desde": "2027-03-01",
+            "monto": 429600
+          },
+          {
+            "desde": "2027-04-01",
+            "monto": 437000
+          }
+        ]
+      },
+      {
+        "code": "BR",
+        "monto": 1621,
+        "moneda": "BRL",
+        "periodo": "mensual",
+        "vigente_desde": "2026-01-01",
+        "fuente": "Decreto 12.797/2025",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/d12797.htm"
+      },
+      {
+        "code": "MX",
+        "monto": 315.04,
+        "moneda": "MXN",
+        "periodo": "diario",
+        "vigente_desde": "2026-01-01",
+        "fuente": "CONASAMI, DOF 09-12-2025",
+        "url": "https://www.gob.mx/conasami/es/articulos/se-publican-en-el-diario-oficial-de-la-federacion-los-salarios-minimos-vigentes-a-partir-del-1-de-enero-de-2026",
+        "nota": "Zona general; en la Frontera Norte es 440,87."
+      },
+      {
+        "code": "EC",
+        "monto": 482,
+        "moneda": "USD",
+        "periodo": "mensual",
+        "vigente_desde": "2026-01-01",
+        "fuente": "Ministerio del Trabajo, Acuerdo MDT-2025-195",
+        "url": "https://www.trabajo.gob.ec/wp-content/uploads/downloads/2026/01/ACUERDO-MINISTERIAL-MDT-2025-195.pdf",
+        "proximos": [
+          {
+            "desde": "2027-01-01",
+            "monto": 500,
+            "fuente": "Presidencia de Ecuador, Decreto Ejecutivo 538"
+          }
+        ]
+      }
+    ]
+  }
+}
