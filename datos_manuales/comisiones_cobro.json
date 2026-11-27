@@ -99,7 +99,7 @@
         "VE": {
           "cobro_pct": 5.4,
           "cobro_fijo": 0.3,
-          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. PayPal no cobra el retiro al banco, si está disponible.",
+          "nota": "Pago comercial de un cliente en EE. UU.: 5,40 % + 0,30 USD. Conversión de PayPal: 3,5 %. PayPal no retira en bolívares: el retiro a banco es a bancos de EE. UU.",
           "url": "https://www.paypal.com/co/business/paypal-business-fees",
           "conversion_pct": 3.5,
           "retiro_fijo": 0.0
@@ -210,6 +210,9 @@
       "fuente": "payoneer.com/pricing (actualizada el 2026-01-01)",
       "url": "https://www.payoneer.com/pricing/",
       "por_pais": {
+        "VE": {
+          "nota": "Cobro: 1 % (mínimo 1 USD). No calculamos el retiro en bolívares: no está confirmado que Payoneer retire a un banco venezolano (puede que solo a bancos de EE. UU.); revísalo en tu cuenta. El costo del retiro no está incluido."
+        },
         "US": {
           "cobro_pct": 0.0,
           "retiro_fijo": 1.5,
