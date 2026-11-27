@@ -259,7 +259,15 @@
       "paises": null,
       "nota": "Cobro con Binance Pay sin comisión. Venta de USDT en la sección P2P tomando un anuncio, sin comisión (la zona Exprés puede cobrar).",
       "fuente": "binance.com, Binance Pay y comisiones P2P",
-      "url": "https://www.binance.com/es/fee/p2pFeeRate"
+      "url": "https://www.binance.com/es/fee/p2pFeeRate",
+      "por_pais": {
+        "US": {
+          "retiro_pct": 0.02,
+          "nota": "En EE. UU. es Binance.US. Binance Pay es gratis, pero solo entre usuarios de Binance.US, en algunos estados y desde la app; permite recibir hasta 10.000 USD cada 24 horas. Se resta 0,02 % por vender en el mercado avanzado («Convert» cobra su costo en el precio). Retiro al banco: ACH gratis; wire 25 USD.",
+          "fuente": "binance.us, comisiones y preguntas frecuentes de Pay",
+          "url": "https://www.binance.us/fees"
+        }
+      }
     }
   ]
 }
